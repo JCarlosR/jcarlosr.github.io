@@ -1,8 +1,8 @@
 # Site settings
 title: JCarlosR
 description: 'Juan Ramos - continuos learning'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/JCarlosR/'
+url: 'http://jcarlosr.github.io'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
