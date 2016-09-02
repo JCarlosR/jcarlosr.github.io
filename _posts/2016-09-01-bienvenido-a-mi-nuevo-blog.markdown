@@ -1,6 +1,6 @@
 ---
 title:  "Bienvenido a mi nuevo blog !"
-date:   2016-01-08 15:04:23
+date:   2016-09-01 11:04:23
 categories: [Anuncios]
 tags: [jekyll]
 ---
@@ -9,7 +9,7 @@ Hola. Este primer post es para comentar un poco mi situación actual.
 Actualmente tengo un [canal en Youtube][canal], sobre programación y temas relacionados a la informática.
 Por cada video, en la mayoría de los casos, he creado una entrada en mi blog. Me refiero a [mi blog en blogspot][blog].
 
-El punto es que ya no usaré más dicho blog, ya que las nuevas publicaciones las realizaré a través de este nuevo medio. A pesar de ello, he decidido no borrarlo, y mantener allí entradas allí que ya existen.
+El punto es que ya no usaré más dicho blog, ya que las nuevas publicaciones las realizaré a través de este nuevo medio. A pesar de ello, he decidido no borrarlo, y mantener allí las entradas que ya existen.
 
 Quiero comentarles que este blog funciona gracias a jekyll. Jekyll es una tecnología que me permite escribir posts usando markdown, en vez de HTML o alguna interfaz para redacción, como lo provee Wordpress o Blogger.
 Esto significa que uso un editor de texto, y redacto cada post como un archivo de texto plano, que posteriormente es interpretado.
@@ -28,6 +28,7 @@ JekyllImport::Importers::Blogger.run({
 ```
 
 Si les interesa tener un blog similar a este, pueden ver la [documentación de jekyll][jekyll] para más información.
+
 Si tienen alguna duda, para cualquiera de las publicaciones, no duden en comentar. Sobre todo ahora que los comentarios funcionan gracias a Disqus !
 
 [canal]: http://youtube.com/sorcjc
