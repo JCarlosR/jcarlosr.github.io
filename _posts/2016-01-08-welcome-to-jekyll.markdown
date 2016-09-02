@@ -1,25 +1,35 @@
 ---
-title:  "Welcome to Jekyll!"
+title:  "Bienvenido a mi nuevo blog !"
 date:   2016-01-08 15:04:23
-categories: [jekyll]
+categories: [Anuncios]
 tags: [jekyll]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+Hola. Este primer post es para comentar un poco mi situación actual.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Actualmente tengo un [canal en Youtube][canal], sobre programación y temas relacionados a la informática.
+Por cada video, en la mayoría de los casos, he creado una entrada en mi blog. Me refiero a [mi blog en blogspot][blog].
 
-Jekyll also offers powerful support for code snippets:
+El punto es que ya no usaré más dicho blog, ya que las nuevas publicaciones las realizaré a través de este nuevo medio. A pesar de ello, he decidido no borrarlo, y mantener allí entradas allí que ya existen.
+
+Quiero comentarles que este blog funciona gracias a jekyll. Jekyll es una tecnología que me permite escribir posts usando markdown, en vez de HTML o alguna interfaz para redacción, como lo provee Wordpress o Blogger.
+Esto significa que uso un editor de texto, y redacto cada post como un archivo de texto plano, que posteriormente es interpretado.
+
+Es posible importar contenido desde un sitio en blogspot hacia jekyll. De hecho, realicé tal migración, y ya tenía las entradas listas en jekyll, pero luego he decidido mantener las entradas como están, para evitar lidiar con temas de redirección y/o contenido duplicado.
+
+En adelante, podré publicar snippets de código, como a continuación:
 
 ``` ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+require "jekyll-import";
+JekyllImport::Importers::Blogger.run({
+	"source"                => "import/blog-08-30-2016.xml",
+	"no-blogger-info"       => false,
+	"replace-internal-link" => false,
+});
 ```
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+Si les interesa tener un blog similar a este, pueden ver la [documentación de jekyll][jekyll] para más información.
+Si tienen alguna duda, para cualquiera de las publicaciones, no duden en comentar. Sobre todo ahora que los comentarios funcionan gracias a Disqus !
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+[canal]: http://youtube.com/sorcjc
+[blog]: https://programacion-innata.blogspot.pe/
+[jekyll]: http://jekyllrb.com
