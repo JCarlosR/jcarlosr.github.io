@@ -2,7 +2,7 @@
 title:  "Aplicación: Un chat de alta disponibilidad"
 date:   2016-09-03 02:04:30
 categories: [Ideas]
-tags: [android, sqlite, mysql]
+tags: [android, sqlite]
 ---
 Mi tesis es una *tesis aplicada*, centrada en desarrollar un módulo dentro del sistema de gestión académica de mi universidad. Pero esa no fue la idea que tuve inicialmente.
 
