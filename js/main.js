@@ -9,8 +9,10 @@ $(document).ready(function () {
       $('.panel-cover').addClass('panel-cover--collapsed')
       $('.content-wrapper').addClass('animated slideInRight')
     } else {
-      $('.panel-cover').css('max-width', currentWidth)
-      $('.panel-cover').animate({'max-width': '530px', 'width': '30%'}, 400, swing = 'swing', function () {})
+
+      $('.panel-cover').animate({'width': '30%'}, 400, swing = 'swing', function () {
+          $('.panel-cover').css('maxWidth', 530)
+      })
     }
   })
 

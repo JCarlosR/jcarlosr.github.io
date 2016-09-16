@@ -1257,10 +1257,10 @@ hr {
 	vertical-align: middle;
 	position: relative;
 	z-index: 800;
-	padding: 0 5%; }
+	padding: 0 15px; }
 
 .panel-main__content {
-	max-width: 620px;
+	max-width: 100%;
 	margin: 0 auto; }
 
 .panel-main__content--fixed {
