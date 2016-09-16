@@ -1,6 +1,5 @@
 ---
 title:  "Bienvenido a mi nuevo blog !"
-date:   2016-09-01 11:04:23
 categories: [Anuncios]
 tags: [jekyll]
 ---

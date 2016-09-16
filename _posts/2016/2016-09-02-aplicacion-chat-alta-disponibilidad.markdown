@@ -1,6 +1,5 @@
 ---
 title:  "Aplicación: Un chat de alta disponibilidad"
-date:   2016-09-03 02:04:30
 categories: [Ideas]
 tags: [android, sqlite]
 ---

@@ -1,6 +1,5 @@
 ---
 title:  "Perspectiva general de caching network data"
-date:   2016-09-04 02:04:30
 categories: [Resumen]
 tags: [android, sqlite, retrofit]
 ---

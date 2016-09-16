@@ -1,7 +1,7 @@
 # Site settings
-title: JCarlosR
-description: 'Juan Ramos - Analista programador'
-url: 'http://jcarlosr.github.io'
+title: Programación y más
+description: 'Aprende sobre desarrollo web y móvil'
+url: ''
 baseurl: '/'
 google_analytics: 'UA-26345705-3'
 disqus_shortname: 'jcarlosr'
