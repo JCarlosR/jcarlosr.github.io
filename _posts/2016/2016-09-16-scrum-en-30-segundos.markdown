@@ -14,7 +14,7 @@ Esto es lo que dice el sitio oficial de Scrum, al presentarlo de forma concisa:
 - En el camino, el ScrumMaster mantiene al equipo concentrado en los objetivos.
 - Al final del sprint, el trabajo se corresponde con un entregable: listo para entregar al cliente, listo para ser expuesto, o para ser mostrado a un stakeholder.
 - El sprint termina con un sprint review y un sprint retrospective.
-- Al iniciar el siguiente sprint, el equipo escoge otra porción de actividades de el product backlog para trabajar en ello nuevamente.
+- Al iniciar el siguiente sprint, el equipo escoge otra porción de actividades del [product backlog]({% post_url 2016-09-17-scrum-product-backlog %}) para trabajar en ello nuevamente.
 
 Ahora observa la siguiente imagen y recuerda lo antes mencionado:
 ![Esquema general de Scrum]({{ site.url }}/images/posts/2016/scrum-esquema-general.jpg)
@@ -22,7 +22,3 @@ Ahora observa la siguiente imagen y recuerda lo antes mencionado:
 Ahora entiendes mejor lo que es Scrum, pero aun tienes algunas dudas, ¿verdad?
 
 Si quieres profundizar más en el tema puedes revisar los enlaces que aparecen sobre el texto anterior.
-
-[product_owner]: https://www.reddit.com/
-[product_backlog]: https://developer.android.com/
-[sprint_backlog]: https://developer.android.com/
