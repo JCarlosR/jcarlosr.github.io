@@ -1,9 +1,111 @@
-<footer class="footer">
-  <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Todos los derechos reservados.</span>
-</footer> 
+<!-- footer
+================================================== -->
+<footer>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
+  <div class="row">
+
+     <div class="twelve columns">
+
+        <ul class="footer-nav">
+           <li><a href="/">Inicio.</a></li>
+           <li><a href="/tutoriales">Tutoriales.</a></li>
+           <li><a href="/blog">Blog.</a></li>
+           <li><a href="/portafolio">Servicios.</a></li>
+           <li><a href="/about">Acerca del autor.</a></li>
+        </ul>
+
+         <ul class="footer-social">
+
+			{% if site.author.github_username %}
+			<!-- GitHub -->
+			<li>
+				<a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} en GitHub" target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+			{% endif %}
+
+			{% comment %}
+			Usar site.author.email en el form de contacto !
+			{% endcomment %}
+
+			{% if site.author.youtube_username %}
+			<!-- Youtube -->
+			<li>
+				<a href="https://www.youtube.com/{{ site.author.youtube_username }}" title="Canal de Youtube" target="_blank">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</li>
+			{% endif %}
+
+			{% if site.author.facebook_username %}
+			<!-- Facebook -->
+			<li>
+				<a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} en Facebook" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			{% endif %}            
+
+			{% if site.author.google_username %}
+			<!-- Google plus -->
+			<li>
+				<a href="https://plus.google.com/+{{ site.author.google_username }}" title="{{ site.author.google_username }} en Google+" target="_blank">
+					<i class="fa fa-google-plus"></i>
+				</a>
+			</li>
+			{% endif %}
+
+			{% if site.author.twitter_username %}
+			<!-- Twitter -->
+			<li>
+				<a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} en Twitter" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			{% endif %}             
+
+			{% if site.author.linkedin_username %}
+			<!-- LinkedIn -->
+			<li class="navigation__item">
+				<a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} en LinkedIn" target="_blank">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			{% endif %}
+
+            <li>
+             	<a href="{{ "feed.xml" | prepend: site.baseurl }}" title="RSS" target="_blank">
+             		<i class="fa fa-rss"></i>
+             	</a>
+            </li>
+         </ul>
+
+
+        <ul class="copyright">
+           <li>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.title }}</li>
+           <li>Diseño basado en Sparrow</li>
+        </ul>
+
+     </div>
+
+     <div id="go-top" style="display: block;"><a title="Ir al cielo" href="#">Volver arriba</a></div>
+
+  </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+================================================== -->
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ "js/jquery-1.10.2.min.js" | prepend: site.baseurl }}"><\/script>')</script>
+<script type="text/javascript" src="{{ "js/jquery-migrate-1.2.1.min.js" | prepend: site.baseurl }}"></script>
+
+<script src="{{ "js/jquery.flexslider.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "js/doubletaptogo.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "js/init.js" | prepend: site.baseurl }}"></script>
+
 {% if site.google_analytics %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

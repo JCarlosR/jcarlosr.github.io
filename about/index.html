@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+ <!-- Page Title
+ ================================================== -->
+ <div id="page-title">
+
+    <div class="row">
+
+       <div class="ten columns centered text-center">
+          <h1>Acerca del autor<span>.</span></h1>
+
+          <p>En este apartado les comento un poco sobre mí.</p>
+       </div>
+
+    </div>
+
+ </div> <!-- Page Title End-->
+
+<!-- Content
+================================================== -->
+<div class="content-outer">
+
+  <div id="page-content" class="row page">
+
+     <div id="primary" class="eight columns">
+
+        <section>
+
+           <h1>Autor de Programación y más.</h1>
+
+           <p class="lead">Mi nombre es Juan Carlos Ramos Suyón y soy un joven que disfruta pensar y aprender. Usualmente estoy buscando aprender más sobre las nuevas tecnologías, y comprender mejor un tema a fin de expresarlo luego de una forma más sencilla y práctica.</p>
+
+           <p>He estudiado Ingeniería de Sistemas en la Universidad Nacional de Trujillo. Allí he aprendido muchas cosas, de eso no hay duda.
+           Sin embargo, considero que la formación universitaria no es indispensable para desempeñarse como desarrollador o analista de sistemas.
+           Es más importante el poder que nos concede nuestra curiosidad.</p>
+
+           <p>En la universidad noté que muchas de las cosas que aprendemos, luego las olvidamos fácilmente. Solemos aprender mucho sobre un tema en particular (profundizar nuestros conocimientos con un buen nivel de detalle), pero luego que
+           empezamos a abordar otros temas que no tienen mucha relación, olvidamos lo antes aprendido. Es por ello que comencé
+           a grabar videos, a fin de recordar luego fácilmente un tema que ya conocía. De hecho, no habría diferencia entre
+           volver a aprender y aprender algo por primera vez.</p>
+
+           <p>Muchas gracias a todas aquellas personas que frecuentan el canal y que han llegado hasta aquí. Muchas gracias por haber
+           compartido, dado like a mis videos, comentado o recomendado los videos a sus amigos. Gracias por todo el apoyo.</p>
+
+        </section> <!-- section end -->
+
+     </div> <!-- primary end -->
+
+     <div id="secondary" class="four columns end">
+
+        <aside id="sidebar">
+
+           <div class="widget widget_contact">
+              <h5>Contacto</h5>
+              <p class="address">
+                 E-mail: juancagb.17@gmail.com
+              </p>
+
+              <h5>Síguenos en</h5>
+              <p>
+                {% if site.author.twitter_username %}
+                  Twitter: <a href="http://twitter.com/{{ site.author.twitter_username }}" target="_blank">@{{ site.author.twitter_username }}</a><br>
+                {% endif %}
+                {% if site.author.facebook_username %}
+                  Facebook: <a href="http://fb.me/{{ site.author.facebook_username }}" target="_blank">Programación y más</a><br>
+                {% endif %}
+                {% if site.author.google_username %}
+                  Google+: <a href="https://plus.google.com/+{{ site.author.google_username }}" target="_blank">Programación y más</a>
+                {% endif %}
+              </p>
+           </div>
+
+            <div class="widget widget_text">
+                <h5 class="widget-title">Ayúdame a ayudar</h5>
+                <div class="textwidget">¿Te ha sido de ayuda alguno de mis tutoriales? Con un ligero aporte me
+                    permitirás continuar produciendo material gratuito en español.
+                </div>
+
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="juancagb.17@hotmail.com">
+                <select name="amount">
+                    <option value="5">Dar las gracias (5 $)</option>
+                    <option value="10">Me has ayudado mucho (10 $)</option>
+                    <option value="15">Continúa con énfasis! (15 $)</option>
+                    <option value="30">Tu labor es genial (30 $)</option>
+                </select>
+                <button type="submit">Aportar</button>
+              </form>
+            </div>
+
+        </aside>
+
+     </div> <!-- secondary End-->
+
+  </div> <!-- page-content End-->
+
+</div> <!-- Content End-->

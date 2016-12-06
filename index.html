@@ -2,42 +2,240 @@
 layout: default
 ---
 
-<div class="main-post-list">
+<!-- Intro Section
+================================================== -->
+<section id="intro">
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-list__post-title post-title">
-          <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a>
-        </h2>
-        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
-        <div class="post-list__meta">
-          <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">
-            {{ post.date | date: "%A, %B %-d, %Y" }}
-          </time> 
-          &#8226; 
-          <span class="post-meta__tags">
-            Etiquetas: {% for tag in post.tags %}
-            <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> 
-            {% endfor %}
-          </span>
-          &#8226;
-          <span class="post-meta__categories">
-            Categoría:
-            {% for category in post.categories %}
-            <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
-            {% endfor %}
-          </span>
+  <!-- Flexslider Start-->
+ <div id="intro-slider" class="flexslider">
+
+   <ul class="slides">
+
+     <!-- Slide -->
+     <li>
+       <div class="row">
+         <div class="twelve columns">
+           <div class="slider-text">
+             <h1>Aprende a programar <span>!</span></h1>
+             <p>Programar es más que codificar.
+                Es un arte que implica buscar solución a problemas de distinta índole.</p>
+           </div>
+                 <div class="slider-image">
+                    <img src="images/sliders/home-slider-image-01.png" alt="Slider 01" />
+                 </div>
+         </div>
+       </div>
+     </li>
+
+        <!-- Slide -->
+     <li>
+       <div class="row">
+         <div class="twelve columns">
+           <div class="slider-text">
+             <h1>Desarrollo web y móvil<span>.</span></h1>
+             <p>Desarrolla sistemas web y aplicaciones móviles, haciendo realidad tus ideas.
+               Analiza, diseña y desarrolla !</p>
+           </div>
+                 <div class="slider-image">
+                    <img src="images/sliders/home-slider-image-02.png" alt="Slider 02" />
+                 </div>
+         </div>
+       </div>
+     </li>
+
+   </ul>
+
+ </div> <!-- Flexslider End-->
+
+</section> <!-- Intro Section End-->
+
+<!-- Info Section
+================================================== -->
+<section id="info">
+
+  <div class="row">
+     <div class="bgrid-thirds">
+
+       <div class="columns">
+          <h2><a href="/blog">Blog.</a></h2>
+          <p>
+            Accede a nuestro blog y consulta nuestras publicaciones.
+            Encontrarás artículos sobre programación y temas afines.
+          </p>
+       </div>
+
+       <div class="columns">
+          <h2><a href="/tutoriales">Video tutoriales.</a></h2>
+          <p>
+            Aprende programación viendo videos sobre distintas tecnologías.
+            Tenemos tutoriales de muchos temas.
+          </p>
+       </div>
+
+       <div class="columns s-first">
+          <h2><a href="/contacto">Asesoría.</a></h2>
+          <p>
+            ¿Estás aprendiendo y necesitas ayuda en un tema específico?
+            ¿Estas realizando un proyecto pero tienes dudas?
+          </p>
+       </div>
+
+     </div>
+  </div>
+
+</section> <!-- Info Section End-->
+
+<!-- Works Section
+================================================== -->
+<section id="works">
+
+  <div class="row">
+
+     <div class="twelve columns align-center">
+        <h1>Nuestros últimos proyectos.</h1>
+     </div>
+
+     <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
+
+         <div class="columns portfolio-item">
+             <div class="item-wrap">
+                 <a href="/portafolio">
+                     <img alt="" src="images/portfolio/urgencia-legal.jpg">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                 </a>
+                 <div class="portfolio-item-meta">
+                     <h5><a href="portafolio/urgencia-legal">Urgencia legal</a></h5>
+                     <p>Plataforma web</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="columns portfolio-item">
+             <div class="item-wrap">
+                 <a href="/portafolio">
+                     <img alt="" src="images/portfolio/jordi-adsera.jpg">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                 </a>
+                 <div class="portfolio-item-meta">
+                     <h5><a href="portafolio/jordi-adsera">Jordi Adsera</a></h5>
+                     <p>Sitio web</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="columns portfolio-item s-first">
+             <div class="item-wrap">
+                 <a href="/portafolio">
+                     <img alt="" src="images/portfolio/home-solution.jpg">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                 </a>
+                 <div class="portfolio-item-meta">
+                     <h5><a href="portafolio/home-solution">Home Solution</a></h5>
+                     <p>Aplicación móvil</p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="columns portfolio-item">
+             <div class="item-wrap">
+                 <a href="/portafolio">
+                     <img alt="" src="images/portfolio/yo-separo.jpg">
+                     <div class="overlay"></div>
+                     <div class="link-icon"><i class="fa fa-link"></i></div>
+                 </a>
+                 <div class="portfolio-item-meta">
+                     <h5><a href="portafolio/yo-separo"># yo separo</a></h5>
+                     <p>Juego interactivo</p>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+
+  </div>
+
+</section> <!-- Works Section End-->
+
+<!-- Journal Section
+================================================== -->
+<section id="journal">
+
+  <div class="row">
+     <div class="twelve columns align-center">
+        <h1>Últimas publicaciones.</h1>
+     </div>
+  </div>
+
+  <div class="blog-entries">
+
+
+    {% for post in site.posts limit:3 %}
+     <article class="row entry">
+
+        <div class="entry-header">
+
+           <div class="permalink">
+              <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}"><i class="fa fa-link"></i></a>
+           </div>
+
+           <div class="ten columns entry-title pull-right">
+              <h3>
+                <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a>
+              </h3>
+           </div>
+
+           <div class="two columns post-meta end">
+                <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-date">
+                  {{ post.date | date: "%-d %b %Y" }}
+                </time>
+                <span class="dauthor">
+                  {% for category in post.categories %}
+                    <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
+                  {% endfor %}
+                </span>  
+           </div>
+
         </div>
-        <hr class="post-list__divider">
-      </li>
+
+        <div class="two columns post-meta">
+        <p class="tagcloud">     
+          {% for tag in post.tags %}
+            <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> 
+          {% endfor %}
+        </p>
+        </div>
+
+        <div class="ten columns post-content">
+           <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;
+           <a class="more-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">Leer más<i class="fa fa-arrow-circle-o-right"></i></a></p>
+        </div>
+
+     </article>
     {% endfor %}
-  </ol>
 
-  <hr class="post-list__divider ">
+  </div> <!-- Entries End -->
 
-  {% if paginator.previous_page or paginator.next_page %}
-      {% include pagination.html %}
-  {% endif %}
+</section> <!-- Journal Section End-->
 
-</div>
+<!-- Call-To-Action Section
+================================================== -->
+<section id="call-to-action">
+  <div class="row">
+
+     <div class="eight columns offset-1">
+
+        <h1><a href="#">Tienes una idea?</a></h1>
+        <p>Materializa tu idea en un proyecto de software! Coméntanos tu proyecto <a href="/contacto"><span>aquí</span></a>,
+        y nos pondremos en <span>contacto</span> contigo <span>muy pronto</span>.
+        </p>
+     </div>
+
+     <div class="three columns action">
+        <a href="/contacto" class="button">Solicitar</a>
+     </div>
+
+  </div>
+</section> <!-- Call-To-Action Section End-->

@@ -3,10 +3,7 @@ Author: Juan Ramos
 Twitter: @programacionym
 Location: Trujillo, Perú
 						
-/* THANKS */
-Developer & Designer: Josh Gerdes
-
 /* SITE */
-Last update: 2016/09/01
+Last update: 2016/11/19
 Components: Jekyll
 Software: Sublime Text

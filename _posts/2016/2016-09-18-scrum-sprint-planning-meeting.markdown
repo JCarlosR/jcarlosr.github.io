@@ -4,7 +4,8 @@ categories: [Buenas prácticas]
 tags: [scrum, agile]
 ---
 
-En Scrum, la *reunión de planificación de sprint* (sprint planning meeting) cuenta con la participación del [product owner]({% post_url 2016-09-18-scrum-product-owner %}), ScrumMaster y todo el equipo de Scrum. Actores externos pueden asistir por invitación del equipo, pero es extraño que suceda en la mayoría de las compañías.
+En Scrum, la *reunión de planificación de sprint* (sprint planning meeting) cuenta con la participación del [product owner]({% post_url 2016-09-18-scrum-product-owner %}), ScrumMaster y todo el equipo de Scrum. 
+Actores externos pueden asistir por invitación del equipo, pero es extraño que suceda en la mayoría de las compañías.
 
 Durante esta reunión de planificación, el product owner describe las características con mayor prioridad al equipo. El equipo realiza las preguntas necesarias para poder convertir una historia de usuario (user story) de alto nivel del [product backlog]({% post_url 2016-09-17-scrum-product-backlog %}) en tareas más específicas a considerar en el sprint backlog.
 

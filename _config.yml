@@ -9,8 +9,10 @@ disqus_shortname: 'jcarlosr'
 author:
   name: 'Juan Ramos'
   email: juancagb.17@gmail.com
-  twitter_username: sorcjc
-  facebook_username: jc.jcarlos.17
+  google_username: SorcJC
+  youtube_username: SorcJC
+  twitter_username: programacionym
+  facebook_username: programacionymas
   github_username:  JCarlosR
   linkedin_username:  jcarlos17
 
@@ -24,7 +26,8 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 7
+paginate: 5
+paginate_path: /blog/page/:num/
 permalink: /blog/:title/
 markdown: kramdown
 highlighter: rouge

@@ -1,5 +1,5 @@
 ---
-title:  "Bienvenido a mi nuevo blog !"
+title:  "Bienvenido a mi nuevo blog!"
 categories: [Anuncios]
 tags: [jekyll]
 ---
