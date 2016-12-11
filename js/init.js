@@ -57,7 +57,7 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
+   $('form#contactForm').on('submit', function() {
 
       $('#image-loader').fadeIn();
 
@@ -66,36 +66,32 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+      var contactData = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
       $.ajax({
-
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
-
+         url: "https://formspree.io/juancagb.17@gmail.com", 
+         method: "POST",
+         data: contactData,
+         dataType: "json",
+         success: function(data) {
+            console.log(data);
             // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
+            $('#image-loader').fadeOut();
+            $('#message-warning').hide();
+            $('#contactForm').fadeOut();
+            $('#message-success').fadeIn();
+         },
+         error: function (err) {
+            console.log(err);
             // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
-
-	      }
-
+            $('#image-loader').fadeOut();
+            $('#message-warning').html(msg);
+            $('#message-warning').fadeIn();
+         }
       });
 
       return false;
-
    });
 
 
