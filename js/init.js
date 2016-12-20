@@ -41,17 +41,21 @@
 /*----------------------------------------------------*/
 /*	Flexslider
 /*----------------------------------------------------*/
-   $('#intro-slider').flexslider({
-      namespace: "flex-",
-      controlsContainer: "",
-      animation: 'fade',
-      controlNav: false,
-      directionNav: true,
-      smoothHeight: true,
-      slideshowSpeed: 7000,
-      animationSpeed: 600,
-      randomize: false,
+   $('#first-image-slider').load(function () {
+      console.log('im here');
+      $('#intro-slider').flexslider({
+         namespace: "flex-",
+         controlsContainer: "",
+         animation: 'fade',
+         controlNav: false,
+         directionNav: true,
+         smoothHeight: true,
+         slideshowSpeed: 7000,
+         animationSpeed: 600,
+         randomize: false
+      });   
    });
+   
 
 /*----------------------------------------------------*/
 /*	contact form
