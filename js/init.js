@@ -54,6 +54,8 @@
          animationSpeed: 600,
          randomize: false
       });   
+   }).each(function() {
+      if(this.complete) $(this).load();
    });
    
 
