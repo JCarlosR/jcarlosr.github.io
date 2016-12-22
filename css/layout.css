@@ -893,7 +893,6 @@ ul#nav ul li a {
 /* tags */
 .post .post-content .tags {
   margin-top: 18px;
-  font-family: notosans-regular, sans-serif;
 }
 .post .post-content .tags a { font-family: notosans-bold, sans-serif; }
 

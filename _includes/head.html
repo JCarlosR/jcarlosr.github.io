@@ -4,8 +4,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author.name }}">
+  {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="author" content="{{ site.title }}">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,8 +21,12 @@
   <meta name="twitter:description" content="{{ site.description }}">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
+  {% else %}
+    <meta property="og:description" content="{{ site.description }}">
+  {% endif %}  
   <meta property="og:image" content="{{ site.url }}/images/mago.png" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="{{ "images/favicons/apple-icon-57x57.png" | prepend: site.baseurl }}">

@@ -30,15 +30,16 @@ layout: default
 
         			{{ content }}
 
-        			<p class="tags">
-        				<span>Etiquetas</span>:
+        			<div class="tags">
+        				<span>Etiquetas &rarr;</span>
         				{% for tag in page.tags %}
-        				<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> /
+          				<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> /
         				{% endfor %}
+
+                {% include share.html %}
         			</p>
 
               <div class="bio cf">
-
                  <div class="gravatar">
                     <img src="/images/mago.png" alt="">
                  </div>
@@ -46,7 +47,6 @@ layout: default
                     <h5><a title="Posts by John Doe" href="#" rel="author">¿No es suficiente?</a></h5>
                     <p>Si tienes alguna duda puedes <a href="/contacto">solicitar asesoría</a> personalizada. Además recuerda visitar nuestro <a href="//youtube.com/SorcJC">canal en Youtube</a> y suscribirte, ya que siempre tenemos nuevo contenido.</p>
                  </div>
-
               </div>
 
               <ul class="post-nav cf">
