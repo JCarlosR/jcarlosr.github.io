@@ -3,144 +3,120 @@ layout: default
 ---
 
 <div class="content-outer">
-  <div id="page-content" class="row">
 
-     <div id="primary" class="nine columns">
-
+    <div id="page-content" class="row">
         <article class="post">
 
-           <div class="entry-header cf">
-              <div class="post-meta">
-                 <time class="date" datetime="{{ page.date | date: "%-d %b %Y" }}">
-                  {{ page.date | date: "%A, %B %-d, %Y" }}
-                 </time>
-                 &#8226;
-                 <span class="categories">
-                  Publicado en
-                  {% for category in page.categories %}
-                  <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
+            <div class="entry-header cf">
+                <div class="post-meta">
+                    <time class="date" datetime="{{ page.date | date: "%-d %b %Y" }}">
+                    {{ page.date | date: "%A, %B %-d, %Y" }}
+                    </time>
+                    &#8226;
+                    <span class="categories">
+                        Publicado en
+                        {% for category in page.categories %}
+                            <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
+                        {% endfor %}
+                    </span>            
+                </div>              
+                <h1>{{ page.title }}</h1>
+            </div>
+
+            <div class="post-content">
+                {{ content }}
+
+                <div class="tags">
+                  <span>Etiquetas &rarr;</span>
+                  {% for tag in page.tags %}
+                  <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> /
                   {% endfor %}
-                 </span>            
-              </div>              
 
-              <h1>{{ page.title }}</h1>
-           </div>
+                  {% include share.html %}
+                </div>
 
-           <div class="post-content">
+                <div class="bio cf">
+                    <div class="gravatar">
+                        <img src="/images/mago.png" alt="">
+                    </div>
+                    <div class="about">
+                        <h5><a title="Posts by John Doe" href="#" rel="author">¿No es suficiente?</a></h5>
+                        <p>Si tienes alguna duda puedes <a href="/contacto">solicitar asesoría</a> personalizada. Además recuerda visitar nuestro <a href="//youtube.com/SorcJC">canal en Youtube</a> y suscribirte, ya que siempre tenemos nuevo contenido.</p>
+                    </div>
+                </div>
 
-        			{{ content }}
+                <ul class="post-nav cf">
+                {% if page.previous.url %}
+                    <li class="prev">
+                        <a rel="prev" href="{{ page.previous.url }}">
+                            <strong>Anterior</strong> {{ page.previous.title }}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if page.next.url %}
+                    <li class="next">
+                        <a rel="next" href="{{ page.next.url }}">
+                            <strong>Siguiente</strong> {{ page.next.title }}
+                        </a>
+                    </li>
+                {% endif %}
+                </ul>
+            </div>
 
-        			<div class="tags">
-        				<span>Etiquetas &rarr;</span>
-        				{% for tag in page.tags %}
-          				<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> /
-        				{% endfor %}
-
-                {% include share.html %}
-        			</p>
-
-              <div class="bio cf">
-                 <div class="gravatar">
-                    <img src="/images/mago.png" alt="">
-                 </div>
-                 <div class="about">
-                    <h5><a title="Posts by John Doe" href="#" rel="author">¿No es suficiente?</a></h5>
-                    <p>Si tienes alguna duda puedes <a href="/contacto">solicitar asesoría</a> personalizada. Además recuerda visitar nuestro <a href="//youtube.com/SorcJC">canal en Youtube</a> y suscribirte, ya que siempre tenemos nuevo contenido.</p>
-                 </div>
-              </div>
-
-              <ul class="post-nav cf">
-                  {% if page.previous.url %}
-			            <li class="prev">
-                    <a rel="prev" href="{{ page.previous.url }}">
-                      <strong>Anterior</strong> {{ page.previous.title }}
-                    </a>
-                  </li>
-                  {% endif %}
-                  {% if page.next.url %}
-  				        <li class="next">
-                    <a rel="next" href="{{ page.next.url }}">
-                      <strong>Siguiente</strong> {{ page.next.title }}
-                    </a>
-                  </li>
-                  {% endif %}
-			         </ul>
-
-           </div>
-
-        </article> <!-- post end -->
+        </article><!-- post end -->
 
         <!-- Comments -->
-    		<div id="comments">
-      		{% if page.comments != false and site.disqus_shortname %}
-      			<section id="disqus_thread"></section>
-      		{% endif %}
-      		
-      		{% if page.comments != false %}{% include disqus.html %}{% endif %}
-    		</div>  <!-- Comments End -->
+        <div id="comments">
+          {% if page.comments != false and site.disqus_shortname %}
+          <section id="disqus_thread"></section>
+          {% endif %}
 
-     </div>
+          {% if page.comments != false %}{% include disqus.html %}{% endif %}
+        </div>  <!-- Comments End -->
+    </div>
 
-     <div id="secondary" class="three columns end">
+    <aside id="sidebar" class="row">
 
-        <aside id="sidebar">
 
-           <div class="widget widget_search">
-              <h5>Búsqueda</h5>
-              <form action="#">
+        <div class="six columns widget widget_text">
+            <h5 class="widget-title">Guías de inicio</h5>
+            <div class="textwidget">¿Eres nuevo y no sabes por dónde empezar? No te preocupes, selecciona una de nuestras guías de inicio.</div>
+            <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbKxsOl5iaP9O7jqIFca7Jpt">Iniciar en desarrollo web</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbJyLI3f0Kr8PYceAQB_9R3Y">Iniciar en desarrollo móvil</a></li>
+            </ul>
+        </div>
 
-                 <input class="text-search" type="text" onfocus="if (this.value == '¿Buscas algo?') { this.value = ''; }" onblur="if(this.value == '') { this.value = '¿Buscas algo?'; }" value="¿Buscas algo?">
-                 <input type="submit" class="submit-search" value="">
-
-              </form>
-           </div>
-
-           <div class="widget widget_text">
-              <h5 class="widget-title">Guías de inicio</h5>
-              <div class="textwidget">¿Eres nuevo y no sabes por dónde empezar? No te preocupes, selecciona una de nuestras guías de inicio.</div>
-              <ul>
-                 <li><a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbKxsOl5iaP9O7jqIFca7Jpt">Iniciar en desarrollo web</a></li>
-                 <li><a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbJyLI3f0Kr8PYceAQB_9R3Y">Iniciar en desarrollo móvil</a></li>
-              </ul>
-	         </div>
-
-           <div class="widget widget_categories">
-              <h5 class="widget-title">Categorías</h5>
-              <ul class="link-list cf">
+        <div class="three columns widget widget_categories">
+            <h5 class="widget-title">Categorías</h5>
+            <ul class="link-list cf">
                 {% for catitem in site.categories  %} 
                 <li>
-                  <a href="/categories/#{{  catitem[0] }}">{{  catitem[0] }}</a>
+                    <a href="/categories/#{{  catitem[0] }}">{{  catitem[0] }}</a>
                 </li>
                 {% endfor %}
-              </ul>
-           </div>
+            </ul>
+            <!--
+            <form action="#">
+                <input class="text-search" type="text" onfocus="if (this.value == '¿Buscas algo?') { this.value = ''; }" onblur="if(this.value == '') { this.value = '¿Buscas algo?'; }" value="¿Buscas algo?">
+                <input type="submit" class="submit-search" value="">
+            </form>
+            -->
+        </div>
 
-           <div class="widget widget_tag_cloud">
-              <h5 class="widget-title">Tags</h5>
-              <div class="tagcloud cf">
+        <div class="three columns end widget widget_tag_cloud">
+            <h5 class="widget-title">Nube de etiquetas</h5>
+            <div class="tagcloud cf">
                 {% assign tags = site.tags | sort %}
                 {% for tag in tags %}
-                 <span class="site-tag">
+                <span class="site-tag">
                     <a href="/tags/#{{ tag | first | slugify }}">
-                      {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                        {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
                     </a>
                 </span>
                 {% endfor %}
-              </div>
-           </div>
-
-           <div class="widget widget_photostream">
-              <h5 class="widget-title">Tecnologías</h5>
-              <ul class="photostream cf">
-                 <li><a href="#"><img src="/images/skills/html5.png" alt="thumbnail"></a></li>
-                 <li><a href="#"><img src="/images/skills/html5.png" alt="thumbnail"></a></li>
-                 <li><a href="#"><img src="/images/skills/html5.png" alt="thumbnail"></a></li>
-              </ul>
             </div>
+        </div>
 
-        </aside><!-- Sidebar End -->
-
-     </div><!-- Comments End -->
-
-  </div>
+    </aside><!-- Sidebar End -->
 </div> <!-- Content End-->
