@@ -34,7 +34,7 @@ Aunque hay muchas formas de realizar una retrospectiva ágil, lo más recomendab
 - Dejar de hacerlo
 - Continuar con ello
 
-Hay muchas variantes de este formato. El ScrumMaster puede facilitar esta reunión solicitando que cada uno lance ideas de forma ordenada. El ScrumMaster puede ir dando vueltas, solicitando a cada persona que comente sobre un tema que le parezca importante para iniciar la discusión, pedirle que se detenga o continue. Por ejemplo, él o ella puede decir a todos que se centren en un tema en particular, o pedir que no se hable más de cierto tema, porque se han descuidado otros.
+Hay muchas variantes de este formato. El ScrumMaster puede facilitar esta reunión solicitando que cada uno lance ideas de forma ordenada. El ScrumMaster puede ir dando vueltas, solicitando a cada persona que comente sobre un tema que le parezca importante para iniciar la discusión, pedirle que se detenga o continúe. Por ejemplo, él o ella puede decir a todos que se centren en un tema en particular, o pedir que no se hable más de cierto tema, porque se han descuidado otros.
 
 Luego de la lluvia de ideas inicial, los equipos suelen votar de forma específica por los items que creen que se deberían considerar para el sprint que está por iniciar. 
 Al final del sprint, la siguiente retrospectiva suele iniciar consultando la lista de items seleccionados en la retrospectiva anterior.

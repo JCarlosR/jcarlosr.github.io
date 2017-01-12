@@ -56,7 +56,7 @@ Es importante realizar una reunión al inicio de cada día, a fin de evaluar el 
 
 Después
 -------
-Lo ideal es que se haya finalizado con todo lo propuesto. En ese caso, la lista *Sprint backlog 1* no tendrá más tarjetas, pues todas estarán ubicados en la lista *Done*. Y lo siguiente será:
+Lo ideal es que se haya finalizado con todo lo propuesto. En ese caso, la lista *Sprint backlog 1* no tendrá más tarjetas, pues todas estarán ubicadas en la lista *Done*. Y lo siguiente será:
 
 - Renombrar la lista *Done* por *Sprint release 1*. 
 - Crear una nueva lista *Done* para el sprint que está por iniciar.
@@ -67,14 +67,14 @@ Lo ideal es que se haya finalizado con todo lo propuesto. En ese caso, la lista 
 
 ¿Y la lista general?
 --------------------
-Cierto. Aquí podemos incluir tarjetas generales. Por ejemplo podemos tarjetas con los siguientes nombres:
+Cierto. Aquí podemos incluir tarjetas con información clave. Por ejemplo podemos tener tarjetas con los siguientes nombres:
 
 - **Sprint goals.** Como su nombre lo indica, aquí anotaremos los objetivos que nos vamos trazando antes de iniciar cada sprint.
 - **Burndown charts.** En esta tarjeta actualizaremos (subiendo nuevas imágenes) nuestro burndown chart, y esto se hará al finalizar cada sprint como ya se comentó antes.
 
 Proyectos más grandes
 ---------------------
-Esta idea funciona bien para proyectos pequeños y medianos, en la que el equipo de desarrollo es relativamente pequeño, tal vez hasta 7 integrantes.
+Esta idea funciona bien para proyectos pequeños y medianos, donde el equipo de desarrollo es relativamente pequeño, tal vez hasta 7 integrantes.
 
 Para proyectos donde interviene una cantidad mayor de personas, lo adecuado es usar varios tablones de Trello para el mismo proyecto (un tablero de planificación, un tablero por cada sprint, y un tablero de retrospectiva).
 

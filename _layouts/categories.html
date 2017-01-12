@@ -6,11 +6,13 @@ layout: default
   <div id="page-content" class="row">
      <div class="twelve columns">
 
-      <h2>Categories:</h2>
-      <div class="categories"> 
-      {% for catitem in site.categories  %} 
-        <a href="#{{  catitem[0] }}">{{  catitem[0] }}</a>
-      {% endfor %}
+      <div id="sidebar">
+        <h2>Categories:</h2>
+        <div class="tagcloud cf"> 
+          {% for catitem in site.categories  %} 
+            <a href="#{{  catitem[0] }}">{{  catitem[0] }}</a>
+          {% endfor %}
+        </div>
       </div>
 
       <!-- iterate through all categories on the site --> 
