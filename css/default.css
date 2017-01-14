@@ -30,6 +30,9 @@ e. Others
 /* ------------------------------------------------------------------ */
 /* Highlight CSS
  ------------------------------------------------------------------ */
+div.highlighter-rouge {
+   margin-bottom: 1em;
+}
 pre.highlight,
 .highlight pre {
   padding: 10px;
