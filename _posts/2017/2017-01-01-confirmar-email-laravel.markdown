@@ -109,8 +109,8 @@ Hasta aquí llega nuestro ejemplo, pero recuerda que puedes implementar más car
 - Mostrar una alerta superior en todas las páginas para usuarios que aun no confirman su email.
 - Incluir en la alerta un enlace para "volver a enviar mail de confirmación".
 
-Por último, recuerda que también puedes (ver este tutorial en formato de video)[canal] en nuestro canal de Youtube.
+Por último, recuerda que también puedes [ver este tutorial en formato de video][canal] en nuestro canal de Youtube.
 
 Si tienes alguna duda, no dudes en comentar!
 
-[canal]: http://youtube.com/sorcjc
+[canal]: https://www.youtube.com/watch?v=D5fKth0MjP8
