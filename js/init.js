@@ -35,29 +35,7 @@
 		jQuery("#go-top a").click(function() {
 			jQuery("html, body").animate({scrollTop:0}, scrollSpeed);
 			return false;
-		});
-
-
-/*----------------------------------------------------*/
-/*	Flexslider
-/*----------------------------------------------------*/
-   $('#first-image-slider').load(function () {
-      console.log('im here');
-      $('#intro-slider').flexslider({
-         namespace: "flex-",
-         controlsContainer: "",
-         animation: 'fade',
-         controlNav: false,
-         directionNav: true,
-         smoothHeight: true,
-         slideshowSpeed: 7000,
-         animationSpeed: 600,
-         randomize: false
-      });   
-   }).each(function() {
-      if(this.complete) $(this).load();
-   });
-   
+		}); 
 
 /*----------------------------------------------------*/
 /*	contact form
