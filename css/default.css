@@ -429,6 +429,9 @@ dd { margin: 0 0 0 20px; }
    margin: 36px auto;
    text-align: center;
 }
+.pagination ul {
+   margin: 0 auto;
+}
 .pagination ul li {
    display: inline-block;
    margin: 0;
