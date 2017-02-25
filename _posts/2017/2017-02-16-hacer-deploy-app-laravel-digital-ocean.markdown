@@ -91,9 +91,10 @@ Al crear un droplet, una contraseña para MySQL se genera por defecto y se guard
 
 Como vamos a necesitar esta contraseña para hacer la configuración de nuestra base de datos, accedemos a este archivo usando el comando ```nano```, de esta forma:
 
-```
+{% highlight bash %}
 nano /root/.digitalocean_password
-```
+{% endhighlight %}
+
 Al acceder encontraremos algo como lo siguiente:
 
 ```

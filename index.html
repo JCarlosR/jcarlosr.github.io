@@ -75,7 +75,7 @@ layout: default
     <div class="row">
 
      <div class="twelve columns align-center">
-      <h1>Nuestros últimos proyectos.</h1>
+      <h2>Nuestros últimos proyectos.</h2>
     </div>
 
     <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
@@ -148,7 +148,7 @@ layout: default
 
     <div class="row">
      <div class="twelve columns align-center">
-      <h1>Últimas publicaciones.</h1>
+      <h2>Últimas publicaciones.</h2>
     </div>
   </div>
 
@@ -172,7 +172,7 @@ layout: default
 
       <div class="two columns post-meta end">
         <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-date">
-          {{ post.date | date: "%-d %b %Y" }}
+          {{ post.date | date: "%d/%m/%Y" }}
         </time>
         <span class="dauthor">
           {% for category in post.categories %}

@@ -30,38 +30,6 @@ e. Others
 /* ------------------------------------------------------------------ */
 /* Highlight CSS
  ------------------------------------------------------------------ */
-div.highlighter-rouge {
-   margin-bottom: 1em;
-}
-pre.highlight,
-.highlight pre {
-  padding: 10px;
-}
-pre.highlight code,
-.highlight pre code {
-  white-space: pre-wrap;
-}
-code {
-   padding: .1em .4em;
-   background: #e8f2fb;
-   border: 1px solid #c9e1f6;
-   border-radius: 3px;
-   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-   font-size: .85em; }
-
-pre {
-   margin-bottom: 1.3em;
-   border-radius: 3px;
-   font-family: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-   font-size: .85em;
-   font-weight: normal;
-   line-height: 1.3em; 
-}
-pre code {
-   padding: 0;
-   background: none;
-   border: none; 
-}
 
 /* ------------------------------------------------------------------
 /* b. Reset
@@ -111,12 +79,6 @@ audio:not([controls]) {
 code, kbd, pre, samp {
    font-family: monospace, serif;
    font-size: 1em;
-}
-
-pre {
-   white-space: pre;
-   white-space: pre-wrap;
-   word-wrap: break-word;
 }
 
 blockquote, q { quotes: &#8220 &#8220; }

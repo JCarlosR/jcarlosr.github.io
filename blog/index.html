@@ -31,16 +31,16 @@ layout: default
               </h1>
               
               <p class="post-meta">
-                 <time class="date" datetime="{{ post.date | date: "%-d %b %Y" }}">
-                  {{ post.date | date: "%A, %B %-d, %Y" }}
-                </time>
-                 &#8226;
                 <span class="categories">
                   Publicado en
                   {% for category in post.categories %}
                   <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
                   {% endfor %}
                 </span>
+                &#8226;
+                <time class="date" datetime="{{ post.date | date: "%-d %b %Y" }}">
+                  {{ post.date | date: "%d/%m/%Y" }}
+                </time>
               </p>
            </div>
 

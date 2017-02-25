@@ -510,7 +510,7 @@ ul#nav ul li a {
    border-top: 1px solid #E3E8E8;
    border-bottom: 1px solid #E3E8E8;
 }
-#works h1 {
+#works h1, #works h2 {
    font: 20px/36px raleway-bold, sans-serif;
    margin-bottom: 36px;
    color: #A1A8AF;
@@ -628,7 +628,7 @@ ul#nav ul li a {
 
 #journal a:hover, #journal a:focus { color: #313131; }
 
-#journal h1 {
+#journal h1, #journal h2 {
    font: 20px/36px raleway-bold, sans-serif;
    margin-bottom: 36px;
    color: #A1A8AF;
