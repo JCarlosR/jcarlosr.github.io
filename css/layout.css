@@ -220,7 +220,7 @@ header .logo a img {
    float: right;
    margin-top: 36px;
    margin-right: 20px;
-   z-index: 99999;
+   z-index: 2;
 }
 
 /* hide toggle button */

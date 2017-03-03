@@ -2,6 +2,7 @@
 title:  "Aprende Laravel desarrollando un Sistema de Gestión de Incidencias"
 categories: [Desarrollo web]
 tags: [laravel]
+image: 2017/laravel-gestion-incidencias.png
 ---
 
 La intención de este tutorial es demostrar **lo fácil y práctico que resulta usar Laravel** para desarrollar un sistema web.

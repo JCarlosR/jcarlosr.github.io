@@ -2,6 +2,7 @@
 title:  "Hacer deploy de una aplicación Laravel a Digital Ocean"
 categories: [Desarrollo web]
 tags: [laravel]
+image: 2017/laravel-digital-ocean/lamp-stack.png
 ---
 
 En este tutorial aprenderás a hacer deployment de tus proyectos Laravel hacia un droplet de Digital Ocean.
