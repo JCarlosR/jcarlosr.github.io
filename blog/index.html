@@ -27,7 +27,9 @@ layout: default
         <article class="post">
            <div class="entry-header cf">
               <h1>
-                <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                  {{ post.title }}
+                </a>
               </h1>
               
               <p class="post-meta">

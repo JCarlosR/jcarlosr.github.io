@@ -2,7 +2,7 @@
 title:  "Hacer deploy de una aplicación Laravel a Digital Ocean"
 categories: [Desarrollo web]
 tags: [laravel]
-image: 2017/laravel-digital-ocean/lamp-stack.png
+image: posts/2017/laravel-digital-ocean/lamp-stack.png
 ---
 
 En este tutorial aprenderás a hacer deployment de tus proyectos Laravel hacia un droplet de Digital Ocean.
@@ -37,27 +37,27 @@ Tu primer Droplet
 ---
 
 Para iniciar, debes dar clic al botón verde superior.
-![Crear mi primer droplet]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/create-droplet-button.png)
+![Crear mi primer droplet](/images/posts/2017/laravel-digital-ocean/create-droplet-button.png)
 
 Al presionar este botón, cargará una página para configurar los parámetros del droplet a crear; y lo primero será definir una imagen. 
 
 En nuestro caso usaremos el **stack LAMP** para no hacer toda la configuración desde 0.
 
 Para ello debes drigirte a la pestaña **One-click apps** y seleccionar **LAMP on 16.04**, tal como lo muestra la imagen.
-![Stack LAMP]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/lamp-stack.png)
+![Stack LAMP](/images/posts/2017/laravel-digital-ocean/lamp-stack.png)
 
 Lo siguiente será definir el tamaño que tendrá nuestro droplet. Cada opción tiene características distintas y suponen un precio a pagar por mes.
 
 Incluso se detalla el precio por hora porque si decidimos susponder nuestro droplet, __solo se nos cobrará según el consumo__ correspondiente.
 
 En nuestro caso vamos a elegir el plan más básico. Podremos escalar fácilmente en un futuro, de ser necesario.
-![Tamaño del droplet]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/droplet-size.png)
+![Tamaño del droplet](/images/posts/2017/laravel-digital-ocean/droplet-size.png)
 
 Posterior a ello no es necesario cambiar nada más; a menos que desees usar un datacenter en específico, o asignar un nombre en particular a tu droplet.
 
 Sin más, damos click al botón de crear, y se nos mostrará una barra de progreso que representa la creación de nuestro droplet.
 
-![Finalizar creación del droplet]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/droplet-create-end.png)
+![Finalizar creación del droplet](/images/posts/2017/laravel-digital-ocean/droplet-create-end.png)
 
 Cuando la creación haya finalizado **recibirás un correo con los datos del droplet**. Este correo contendrá una contraseña por defecto para que puedas conectarte a tu droplet vía SSH.
 
@@ -181,7 +181,7 @@ Genial. Ya tenemos todo listo para clonar nuestro proyecto de Laravel (a partir 
 
 Así que nos ubicamos en /var/www de la siguiente manera:
 
-![Carpeta var/www]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/cd-var-www.png)
+![Carpeta var/www](/images/posts/2017/laravel-digital-ocean/cd-var-www.png)
 
 ¡Y clonamos nuestro repositorio! En mi caso usaré:
 
@@ -191,7 +191,7 @@ git clone https://github.com/JCarlosR/gestion-incidencias.git
 
 Como mi proyecto se llama ```gestion-incidencias``` voy a verificar que esta carpeta se haya creado correctamente ingresando con ```cd``` y luego consultando su contenido con ```ls``` como lo muestra la imagen:
 
-![Carpeta creada]({{ site.baseurl }}images/posts/2017/laravel-digital-ocean/directory-created.png)
+![Carpeta creada](/images/posts/2017/laravel-digital-ocean/directory-created.png)
 
 Nuestra carpeta se ha creado. Pero recuerda: un proyecto Laravel tiene dependencias sobre otros paquetes. Estas dependencias se especifican en el archivo ```composer.json```. 
 
