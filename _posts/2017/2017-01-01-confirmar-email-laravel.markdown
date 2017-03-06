@@ -30,7 +30,11 @@ Además usaremos un segundo campo llamado ```confirmation_code```.
 
 Este campo guardará una cadena aleatoria, que será generada y asignada a cada usuario durante su registro.
 
-Cada vez que un usuario se registre recibirá un correo de confirmación. Este correo contendrá un enlace con la siguiente ruta: ```/register/verify/{confirmation_code}```. 
+Cada vez que un usuario se registre recibirá un correo de confirmación. Este correo contendrá un enlace con la siguiente ruta: 
+
+```
+/register/verify/{confirmation_code}
+```
 
 Como debes haber imaginado, en cuanto el usuario ingrese a este link, nuestro controlador va a comparar el código de confirmación con el que el usuario obtuvo aleatoriamente en su registro. Si coincide, actualizaremos el valor del campo ```confirmed``` que tiene el usuario a ```TRUE```.
 

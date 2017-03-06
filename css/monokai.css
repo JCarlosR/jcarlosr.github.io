@@ -1,5 +1,6 @@
 /* Adjusted to give override background and text colour */
 .highlight pre, pre.highlight {
+	overflow: auto;
     background-color: #49483E;
     border: 1px solid #ccc;
     padding: 6px 10px;

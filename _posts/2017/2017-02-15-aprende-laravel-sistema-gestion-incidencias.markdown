@@ -72,13 +72,15 @@ No digo que Laravel es el mejor framework. Simplemente quiero mostrarte, si est�
 
 No se diga más
 ---
-Si estás interesado en **aprender de forma gratuita**, a desarrollar el sistema de gestión de incidencias que antes te comenté, y desde cero, entonces es momento de que inicies con la serie haciendo [clic aquí][serie]{:target="_blank"}.
+Si estás interesado en **aprender de forma gratuita**, a desarrollar el sistema de gestión de incidencias que antes te comenté, y desde cero, entonces es momento de que inicies con la serie haciendo clic en la siguiente imagen:
+
+![Aprender Laravel de forma práctica](https://i.ytimg.com/vi/0iqYkOy4ups/hqdefault.jpg?custom=true&w=320&h=180&stc=true&jpg444=true&jpgq=90&sp=68)
 
 ¿Qué aprenderé?
 ---
-Muy buena pregunta. Antes te dejé un enlace para que puedas acceder directamente a la **serie de tutoriales en Youtube**.
+Muy buena pregunta. 
 
-Pero si quieres ver de antemano el listado de capítulos, aquí los tienes:
+Si quieres ver de antemano el listado de capítulos, aquí los tienes:
 
 - **Capítulo 1:** Introducción
    
