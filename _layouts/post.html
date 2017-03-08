@@ -14,7 +14,7 @@ layout: default
                         <span class="categories">
                             Publicado en
                             {% for category in page.categories %}
-                                <a href="{{ site.baseurl }}categories/#{{ category }}">{{ category }}</a>
+                                <a href="/categories/#{{ category }}">{{ category }}</a>
                             {% endfor %}
                         </span>     
                         &#8226;
@@ -31,7 +31,7 @@ layout: default
                     <div class="tags">
                       <span>Etiquetas &rarr;</span>
                       {% for tag in page.tags %}
-                      <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> /
+                      <a href="/tags/#{{ tag }}">{{ tag }}</a> /
                       {% endfor %}
 
                       {% include share.html %}
