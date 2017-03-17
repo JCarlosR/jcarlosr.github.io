@@ -140,19 +140,24 @@ Si quieres ver de antemano el listado de capítulos, aquí los tienes:
    
 - **Capítulo 29:** Discusión
 
-Aún hay más
+Versión Android
 ---
-Dado que el tutorial tuvo una buena acogida, y el sistema que desarrollamos puede aplicarse a un equipo de trabajo de cualquier rubro, he querido que vayamos a un siguiente paso.
+Si has terminado de ver todos los videos, te comento que también existe una versión en Android del proyecto.
 
-Con ello me refiero a añadir realtime a la aplicación web, y así mismo desarrollar una aplicación móvil que funcione en paralelo.
+Si deseas adquirir el código fuente, y una explicación general de cómo funciona esta aplicación, puedes hacerlo a través de la siguiente opción.
 
-Para programar la característica de realtime usaremos Pusher, como comenté en los últimos capítulos de la serie; y la aplicación móvil la desarrollaremos para Android.
+<div markdown="span" class="text-center">
+	<a class="button" href="https://transactions.sendowl.com/products/524187/EFA78824/purchase" rel="nofollow">
+		Deseo adquirir el proyecto completo
+	</a>
+</div>
 
-Esta parte final de la serie sí tiene un costo. Pero a cambio, ten por seguro que podrás **ver la aplicación finalizada** y trabajando al 100%, ya que **los tutoriales cuentan con un buen nivel de detalle** :)
+<small>Muy pronto grabaré un curso explicando paso a paso cómo desarrollar la versión Android de este proyecto.
+Si adquieres el código fuente ahora mismo, tendrás acceso al curso como cortesía sin pagos adicionales.</small>
 
-El código fuente de la aplicación web se encuentra disponible en Github de forma gratuita, pero dicho repositorio no está actualizado a la versión final.
+<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
 
-Las características más emocionantes solo estarán disponibles para quienes deseen seguir la serie hasta el final.
+{% comment %}
 
 Adquirir la parte final de la serie significa:
 
@@ -163,14 +168,6 @@ Adquirir la parte final de la serie significa:
 Además, de forma opcional podrás solicitar asesoría personalizada por una hora. 
 Así, yo mismo te ayudaré a desplegar la aplicación a un servidor de Digital Ocean, de forma que la plataforma funcione tanto en web como en móvil y la puedas usar con tu equipo de trabajo o para el fin que creas conveniente.
 
-<a class="button text-center" href="https://transactions.sendowl.com/products/524187/EFA78824/purchase" rel="nofollow">
-	Deseo adquirir el proyecto completo
-</a>
-<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
-
-
-Nota 1: *Si adquieres el paquete ahora podrás descargar inmediatamente el código fuente del proyecto Android. Sin embargo, los videotutoriales aún están en camino. En cuanto los tenga, actualizaré los archivos, recibrás una notificación vía mail y tendrás acceso a ellos sin costo alguno.*
-
-Nota 2: *Como agradecimiento, por confiar en mi trabajo y ser de los primeros en adquirir este paquete, tienes acceso a un descuento especial. Esta promoción dejará de ser válida a finales de Marzo.*
+{% endcomment %}
 
 [serie]: https://www.youtube.com/playlist?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG
