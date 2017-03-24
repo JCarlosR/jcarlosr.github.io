@@ -4,11 +4,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  
   {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
+  {% elsif page.description %}
+    <meta name="description" content="{{ page.description }}">
   {% else %}
     <meta name="description" content="{{ site.description }}">
   {% endif %}
+
   <meta name="author" content="{{ site.title }}">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -22,11 +26,13 @@
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  
   {% if page.excerpt %}
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 28 }}">
   {% else %}
     <meta property="og:description" content="{{ site.description }}">
   {% endif %}
+
   {% if page.image %}
     <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}">
   {% else %}
