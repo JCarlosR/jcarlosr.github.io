@@ -21,6 +21,8 @@ layout: default
 				{{ content }}
 			</section> <!-- section end -->
 
+			{% include share.html %}
+
 		    <div id="comments">
 		      {% if page.comments != false and site.disqus_shortname %}
 		      <section id="disqus_thread"></section>

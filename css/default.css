@@ -13,6 +13,7 @@ c. Default Styles
    4. Images
    5. Buttons
    6. Forms
+   7. Share
 d. Grid
 e. Others
    1. Clearing
@@ -435,7 +436,7 @@ dd { margin: 0 0 0 20px; }
 }
 .pagination .prev, .pagination .next {}
 
-/*  5. Images  --------------------------------------------------------- */
+/*  4. Images  --------------------------------------------------------- */
 
 img {
    max-width: 100%;
@@ -444,7 +445,7 @@ img {
 img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }
 
-/*  6. Buttons  --------------------------------------------------------- */
+/*  5. Buttons  --------------------------------------------------------- */
 
 .button,
 .button:visited,
@@ -513,7 +514,7 @@ input::-moz-focus-inner {
 }
 
 
-/*  7. Forms  --------------------------------------------------------- */
+/*  6. Forms  --------------------------------------------------------- */
 
 form { margin-bottom: 24px; }
 fieldset { margin-bottom: 24px; }
@@ -576,6 +577,30 @@ input[type="radio"] {
 }
 
 input[type="checkbox"] { display: inline; }
+
+.button-small {
+   font: 15px/18px notosans-bold, sans-serif;
+   display: inline-block;
+   padding: 6px 10px;
+   margin-right: 3px;
+   margin-bottom: 6px;
+   background-color: #E6E8EB;
+
+   -webkit-transition: all 200ms ease-in-out;
+   -moz-transition: all 200ms ease-in-out;
+   -o-transition: all 200ms ease-in-out;
+   -ms-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   border-radius: 3px;
+}
+.button-small:hover {
+   background: #838A91;
+   color: #fff;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Grid
