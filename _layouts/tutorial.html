@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div id="page-title">
+  <div class="row">
+
+    <div class="ten columns centered text-center">
+      <h1>{{ page.title }}<span>.</span></h1>
+
+      <p>{{ page.subtitle }}</p>
+    </div>
+
+  </div>
+</div> <!-- Page Title End-->
+
+<div class="content-outer">
+	<div id="page-content" class="row page">
+		<div id="primary" class="ten columns offset-1">
+
+			<section>
+				{{ content }}
+			</section> <!-- section end -->
+
+		    <div id="comments">
+		      {% if page.comments != false and site.disqus_shortname %}
+		      <section id="disqus_thread"></section>
+		      {% endif %}
+
+		      {% if page.comments != false %}{% include disqus.html %}{% endif %}
+		    </div> <!-- Comments End -->
+		    
+		</div>
+	</div>
+</div> <!-- Content End-->
