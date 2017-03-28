@@ -1,36 +1,38 @@
 <!-- Header
 ================================================== -->
+<div class="text-center">
+    ¿1ra vez en la página? 
+    En ese caso <strong>empieza por nuestra <a href="/guia-de-inicio/programacion-y-mas">guía de inicio</a></strong> en programación.
+</div>
 <header>
+    <div class="row">
+        <div class="twelve columns">
 
-  <div class="row">
-     <div class="twelve columns">
+            <div class="logo">
+                <a href="/" title="enlace la página de inicio de {{ site.title }}">
+                    <img alt="{{ site.title }}" src="/images/logo-horizontal.png">
+                </a>
+            </div>
 
-        <div class="logo">
-           <a href="/" title="enlace la página de inicio de {{ site.title }}">
-              <img alt="{{ site.title }}" src="/images/logo-horizontal.png">
-           </a>
+            <nav id="nav-wrap">
+                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                <ul id="nav" class="nav">
+
+                    <li class="current"><a href="/">Inicio</a></li>
+                    <li><a href="/tutoriales">Tutoriales</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><span><a href="#">Servicios</a></span>
+                        <ul>
+                            <li><a href="/portafolio">Portafolio</a></li>
+                            <li><a href="/contacto">Contacto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about">Acerca de</a></li>
+
+                </ul> <!-- end #nav -->
+            </nav> <!-- end #nav-wrap -->
+
         </div>
-
-         <nav id="nav-wrap">
-             <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-             <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-             <ul id="nav" class="nav">
-
-                 <li class="current"><a href="/">Inicio</a></li>
-                 <li><a href="/tutoriales">Tutoriales</a></li>
-                 <li><a href="/blog">Blog</a></li>
-                 <li><span><a href="#">Servicios</a></span>
-                     <ul>
-                         <li><a href="/portafolio">Portafolio</a></li>
-                         <li><a href="/contacto">Contacto</a></li>
-                     </ul>
-                 </li>
-                 <li><a href="/about">Acerca de</a></li>
-
-             </ul> <!-- end #nav -->
-         </nav> <!-- end #nav-wrap -->
-
-     </div>
-  </div>
-
+    </div>
 </header> <!-- Header End -->

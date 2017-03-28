@@ -349,61 +349,19 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 /* c. Intro Section - Main Page
 /* ------------------------------------------------------------------ */
+#cta {
+   background: #11ABB0;
+   color: white;
+   margin: 0;
+}
 
 #intro { background: #383232 url(../images/header-bg.jpg); }
 
-/* Flex Slider
-/* ------------------------------------------------------------------ */
-
-/* Reset */
-.flexslider a:active,
-.flexslider a:focus  { outline: none; }
-.slides,
-.flex-control-nav,
-.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
-.slides li { margin: 0; padding: 0;}
-
-/* Necessary Styles */
-.flexslider {
-   position: relative;
-   zoom: 1;
-   margin: 0;
-   padding: 0;
-}
-.flexslider .slides { zoom: 1; }
-.flexslider .slides > li { position: relative; }
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container { zoom: 1; position: relative; }
-
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-   content: " ";
-   display: table;
-}
-.slides:after {
-   clear: both;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child { display: block; }
-
-
-/* FlexSlider Intro Slider Styles */
-.slides {
-   overflow: hidden;
-   position: relative;
-}
 .slider-text {
 	color: #b4a9a9;
    width: 90%;
    text-align: center;
-   margin: 60px auto 36px auto;
+   margin: 3em auto 2em auto;
 }
 .slider-text h1 {
    font: 50px/60px raleway-bold, sans-serif;
@@ -419,14 +377,6 @@ ul#nav ul li a {
    padding: 0;
    margin: 12px 8% 0;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
-}
-.slider-image {
-   width: 90%;
-   margin: 0 auto;
-}
-.slides li img {
-   vertical-align: bottom;
-   display: block;
 }
 
 /* Direction Navigation
