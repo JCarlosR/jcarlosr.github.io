@@ -33,11 +33,12 @@ Existen varias formas de **añadir dependencias a nuestro proyecto**.
 
 En este caso usaremos el método más común y recomendado: añadiremos Retrofit **vía Gradle**.
 
-Eso significa que debemos ir a nuestro archivo ```build.gradle``` y añadir las siguientes línea:
+Eso significa que debemos ir a nuestro archivo ```build.gradle``` y añadir las siguientes líneas:
 
 ```
 compile 'com.squareup.retrofit2:retrofit:2.2.0'
 compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 ```
 
 <blockquote>
@@ -75,7 +76,7 @@ Una vez que tienes las dependencias cargadas en tu proyecto, lo siguiente es con
 
 Puedes, pero en serio, te recomiendo crear estos 2 archivos.
 
-Una vez que lo comprendas, luego te será súper sencillo hacer peticiones, y lo mejor de todo es que tu código estará ordenado y podrás replicarlo fácilmente a otros proyectos.
+Una vez que lo comprendas, luego te será **súper sencillo hacer peticiones**, y lo mejor de todo es que tu código estará ordenado y podrás replicarlo fácilmente a **otros proyectos**.
 
 Una clase y una interfaz
 ---
@@ -94,7 +95,7 @@ Otro **ejemplo** es que le pasamos los datos de un producto, para que la API lo 
 
 ¿Tiene sentido verdad?
 
-Para que se comprenda mejor, a continuación puedes ver código de ejemplo para ambos conceptos.
+Para que se comprenda mejor, a continuación puedes ver códigos de ejemplo para ambos conceptos.
 
 
 Ejemplo de ApiService
@@ -194,5 +195,19 @@ Adicional a ello, necesitamos otro grupo de clases que nos permitirán "parsear"
 Por ejemplo, si tenemos una entidad Disease (con los datos de una enfermedad), entonces vamos a crear esta clase dentro de la carpeta ```model```.
 
 Esta carpeta contendrá todo nuestro modelo de datos. Es decir, existirá **una clase por cada entidad que recibamos** desde la API.
+
+A estas alturas nuestro proyecto se verá de la siguiente forma:
+
+![Paquetes de nuestro proyecto Android](/images/posts/2017/android-retrofit/paquetes-proyecto-android.png)
+
+En la carpeta ```response```, ubicada dentro del paquete ```io``` se encontrarán nuestras clases que sirven para determinar el formato a usar en el "parse" de la respuesta JSON a objetos.
+
+## ¿Te has perdido?
+
+No te preocupes, hay un video que puedes ver ahora mismo sobre cómo implementar todos estos pasos:
+
+<div class="text-center">
+	<iframe width="858" height="480" src="//www.youtube.com/embed/g_xO238hJqU?vq=hd720" frameborder="0" allowfullscreen></iframe>	
+</div>
 
 [diagnostic-vet-serie]: https://www.youtube.com/watch?v=RpWzd0-_47o
