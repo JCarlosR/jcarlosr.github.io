@@ -1,3 +1,11 @@
+/* Inline code */
+p code.highlighter-rouge {
+	background: #eff0f1;
+	padding: 0.25em;
+	font-size: 0.90em;
+	color: #11ABB0;
+}
+
 /* Adjusted to give override background and text colour */
 .highlight pre, pre.highlight {
 	overflow: auto;

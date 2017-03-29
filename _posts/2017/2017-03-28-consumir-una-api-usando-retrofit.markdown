@@ -53,6 +53,8 @@ En el lado izquierdo de Android Studio encontrarás dentro de Gradle Scripts 2 o
 
 Dentro del archivo debes agregar 2 dependencias. Una para Retrofit y otra para GSON.
 
+La tercera dependencia, la del ```logging interceptor``` es opcional. Pero te recomiendo añadirla para poder debuggear las peticiones.
+
 ![Añadir Retrofit y GSON a nuestro proyecto Android](/images/posts/2017/android-retrofit/dependencias-retrofit-android.png)
 
 <blockquote>
@@ -77,6 +79,18 @@ Una vez que tienes las dependencias cargadas en tu proyecto, lo siguiente es con
 Puedes, pero en serio, te recomiendo crear estos 2 archivos.
 
 Una vez que lo comprendas, luego te será **súper sencillo hacer peticiones**, y lo mejor de todo es que tu código estará ordenado y podrás replicarlo fácilmente a **otros proyectos**.
+
+Primero lo primero: Internet
+---
+
+Antes de empezar a configurar Retrofit en nuestro proyecto, es importante que nuestra aplicación se pueda conectar a internet.
+
+Para solicitar este permiso debemos añadir la siguiente línea a nuestro archivo ```manifest```:
+
+```
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
 
 Una clase y una interfaz
 ---
