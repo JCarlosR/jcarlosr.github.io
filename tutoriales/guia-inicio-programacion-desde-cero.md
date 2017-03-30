@@ -29,7 +29,7 @@ ___
 
 Te aseguro que hasta el día de hoy se han escrito miles de artículos con razones por las que debes aprender a programar. 
 
-Si lo deseas puedes hacer ahora mismo una búsqueda. Te aseguro que las razones son infinitas, y terminarás enamorándote de la programación. Pero por favor, que ese gusto te lleve al aprendizaje.
+Las razones son infinitas.
 
 Permíteme mencionarte algunas de estas **razones** de forma breve:
 
@@ -41,6 +41,14 @@ Permíteme mencionarte algunas de estas **razones** de forma breve:
 
 - Programar, **no es una actividad mecánica**. Tal vez codificar ciertas características de un software lo sea. Pero es por eso que cada vez se desarrollan herramientas más sofisticadas para nostros mismos, los programadores.
 
+Es por eso que **muchas personas se enamoran de la programación**. 
+
+Por todo lo que ven y escuchan de ella.
+
+Sin embargo, una gran mayoría no se decide cuándo **empezar a aprender**.
+
+O bien, desconocen por dónde empezar y lo terminan dejando.
+
 ___
 
 ## Elige tu camino
@@ -49,7 +57,7 @@ Es importante que tengas bien en claro **qué es lo que quieres desarrollar** en
 
 Recuerda que podrás programar **de todo**. Pero **debes empezar** por una tecnología en específico.
 
-Yo, por ejemplo, aprendí a programar en este orden (he tratado de resumir y mostrar lo principal, pero si no comprendes la mayoría de conceptos no te preocupes):
+Yo, por ejemplo, aprendí a programar en este orden (he tratado de resumir y mostrar lo principal, y no te preocupes si no comprendes varios de los términos):
 
 - **Fundamentos de la programación**: Cómo declarar variables, cómo asignar valores, cómo realizar tareas repetitivas usando bucles, cómo hacer uso de condicionales, y conceptos generales.
 - **Pseudocódigo y algoritmos**: Con la intención de desarrollar mi lógica de programación. Esta fase será muy determinante para las fases siguientes, ya que la base de todo es la práctica y el entender perfectamente lo que estás haciendo.
@@ -75,13 +83,13 @@ Notarás que C++ es relativamente más rígido que Javascript. Y eso es porque e
 
 Lo que te puedo decir es que si aprendes C++, los demás lenguajes te parecerán más fáciles de aprender. Ello no ocurre si empiezas aprendiendo un lenguaje amigable y luego intentas aprender uno menos flexible, porque tendrás que aprender conceptos nuevos.
 
-Pero no es indispensable que aprendas a programar en C++. Puedes empezar a aprender sobre desarrollo web, y luego aprender a programar programas de escritrio si lo llegas a necesitar.
+Pero no es indispensable que aprendas a programar en C++. Puedes empezar a aprender sobre desarrollo web, y luego aprender a desarrollar programas de escritorio si lo llegas a necesitar.
 
 Además de los temas que mencioné antes, existen muchos más, pero todo depende de lo que quieras lograr.
 
 Yo personalmente te recomiendo empezar con desarrollo web, luego desarrollo móvil y por último desarrollo de videojuegos si es a lo que apuntas verdaderamente.
 
-El desarrollo de videojuegos en realidad introduce más conceptos, que no están presentes en el desarrollo de aplicaciones que no lo son.
+El desarrollo de videojuegos introduce una serie de conceptos nuevos, que no están presentes en el desarrollo de aplicaciones que no lo son.
 
 Recapitulando, **mi sugerencia es que vayas en este orden**:
 
