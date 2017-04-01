@@ -100,8 +100,7 @@ Una vez hecho ello:
 {% highlight java %}
 public class MyActivity extends Activity {
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private MyAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,11 +114,11 @@ public class MyActivity extends Activity {
         mRecyclerView.setHasFixedSize(true);
 
         // Nuestro RecyclerView usará un linear layout manager
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        mRecyclerView.setLayoutManager(layoutManager);
 
         // Asociamos un adapter (ver más adelante cómo definirlo)
-        mAdapter = new MyAdapter(myDataset);
+        mAdapter = new MyAdapter(myDataSet);
         mRecyclerView.setAdapter(mAdapter);
     }
     
@@ -197,7 +196,113 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 }
 {% endhighlight %}
 
-¿Dudas y más dudas?
+DataSet
+---
+Como puedes observar, dentro del ```adapter``` tenemos un atributo de clase llamado ```mDataSet```.
+
+En este caso, la fuente de datos que espera recibir el adaptador es solo un arreglo de objetos ```String```.
+
+Pero esta fuente de datos puede ser más compleja, según se requiera.
+
+Por ejemplo, si queremos mostrar información de usuarios es posible que el atributo ```mDataSet``` se defina como un ```ArrayList``` de objetos ```User``` (o de la entidad que deseamos mostrar en nuestra lista).
+
+ViewHolder
+---
+En el método ```onCreateViewHolder``` hacemos uso de la clase ```LayoutInflater``` para "inflar" un layout XML.
+
+En este caso, el layout se representa solo por un ```TextView```, pero también podría hacer referencia a un ```CardView``` y contener más datos.
+
+Eso significa que debemos **definir un nuevo recurso XML con la apariencia que tendrán nuestros elementos** del listado, y luego usar ese layout en el método ```onCreateViewHolder```.
+
+Aquí un ejemplo de un XML que representa los datos de una entidad "Informe" a través de un CardView:
+
+{% highlight xml %}
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="3dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvInformId"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFORME 777" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance"
+            android:text="Juan Ramos" />
+
+        <TextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creado el día 01/02/2017"/>
+
+        <TextView
+            android:id="@+id/tvFromDate"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Desde 17/03/2017" />
+
+        <TextView
+            android:id="@+id/tvToDate"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content"
+            android:text="Hasta 17/07/2017" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoToReports"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ver reportes" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Editar informe"
+                android:id="@+id/btnEditInform" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+{% endhighlight %}
+
+Y este es el resultado:
+
+![Ejemplo de CardView](/images/posts/2017/android-recycler-view/card-view-ejemplo.png)
+
+¿Te has perdido en algún punto?
 ---
 
 Si tienes dudas puedes comentar aquí debajo.
