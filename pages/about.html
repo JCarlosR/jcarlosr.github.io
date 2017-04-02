@@ -31,19 +31,20 @@ permalink: /about
 
            <h1>Autor de Programación y más.</h1>
 
-           <p class="lead">Mi nombre es Juan Carlos Ramos Suyón y soy un joven que disfruta pensar y aprender. Usualmente estoy buscando aprender más sobre las nuevas tecnologías, y comprender mejor un tema a fin de expresarlo luego de una forma más sencilla y práctica.</p>
+           <p>Hola. Mi nombre es Juan, y soy una persona que siempre está encantanda de aprender más cada día.</p> 
 
-           <p>He estudiado Ingeniería de Sistemas en la Universidad Nacional de Trujillo. Allí he aprendido muchas cosas, de eso no hay duda.
-           Sin embargo, considero que la formación universitaria no es indispensable para desempeñarse como desarrollador o analista de sistemas.
-           Es más importante el poder que nos concede nuestra curiosidad.</p>
+           <p>Me interesa conocer más sobre las nuevas tecnologías, y comprender muy bien un tema con el fin de expresarlo luego de una forma más sencilla y práctica.</p>
 
-           <p>En la universidad noté que muchas de las cosas que aprendemos, luego las olvidamos fácilmente. Solemos aprender mucho sobre un tema en particular (profundizar nuestros conocimientos con un buen nivel de detalle), pero luego que
-           empezamos a abordar otros temas que no tienen mucha relación, olvidamos lo antes aprendido. Es por ello que comencé
-           a grabar videos, a fin de recordar luego fácilmente un tema que ya conocía. De hecho, no habría diferencia entre
-           volver a aprender y aprender algo por primera vez.</p>
+           <p>He estudiado Ingeniería de Sistemas en la Universidad Nacional de Trujillo.</p>
+          
+           <p>Considero que la formación universitaria no es indispensable para desempeñarse como desarrollador o analista de sistemas. Es más importante el poder que nos concede nuestra curiosidad.</p>
 
-           <p>Muchas gracias a todas aquellas personas que frecuentan el canal y que han llegado hasta aquí. Muchas gracias por haber
-           compartido, dado like a mis videos, comentado o recomendado los videos a sus amigos. Gracias por todo el apoyo.</p>
+           <p>En la universidad noté que muchas de las cosas que aprendemos, luego las olvidamos fácilmente. Solemos aprender mucho sobre un tema en particular (obtenemos conocimientos más profundos), pero luego que
+           empezamos a abordar otros temas que no tienen mucha relación, olvidamos lo antes aprendido.</p>
+
+           <p>Es por ello que comencé a grabar videos, a fin de recordar luego fácilmente un tema que ya conocía. De hecho, no habría diferencia entre volver a aprender y aprender algo por primera vez.</p>
+
+           <p>Muchas gracias por visitar el canal y haber llegado hasta aquí.</p>
 
         </section> <!-- section end -->
 
@@ -54,12 +55,12 @@ permalink: /about
         <aside id="sidebar">
 
            <div class="widget widget_contact">
-              <h5>Contacto</h5>
+              <h4>Contacto</h4>
               <p class="address">
-                 E-mail: juancagb.17@gmail.com
+                 Si deseas conversar sobre algo, puedes <a href="/contacto">enviarme un mensaje</a>.
               </p>
 
-              <h5>Síguenos en</h5>
+              <h4>Síguenos en</h4>
               <p>
                 {% if site.author.twitter_username %}
                   Twitter: <a href="http://twitter.com/{{ site.author.twitter_username }}" target="_blank">@{{ site.author.twitter_username }}</a><br>
@@ -74,11 +75,14 @@ permalink: /about
            </div>
 
             <div class="widget widget_text">
-                <h5 class="widget-title">Ayúdame a ayudar</h5>
-                <div class="textwidget">¿Te ha sido de ayuda alguno de mis tutoriales? Con un ligero aporte me
-                    permitirás continuar produciendo material gratuito en español.
+                <h4 class="widget-title">Ayúdame a ayudar</h4>
+                <div class="textwidget">
+                  <p>¿Te ha sido de ayuda alguno de mis tutoriales?</p>
+                  <p>Por favor <strong>compártelo con tus colegas y amigos</strong>.</p>
+                  <p>Eso me ayudará a continuar compartiendo contenido en español de forma gratuita.</p>
                 </div>
 
+              {% comment %}
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations">
                 <input type="hidden" name="business" value="juancagb.17@hotmail.com">
@@ -90,6 +94,7 @@ permalink: /about
                 </select>
                 <button type="submit">Aportar</button>
               </form>
+              {% endcomment %}
             </div>
 
         </aside>
