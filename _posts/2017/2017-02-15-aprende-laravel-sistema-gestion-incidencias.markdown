@@ -144,30 +144,17 @@ Versión Android
 ---
 Si has terminado de ver todos los videos, te comento que también existe una versión en Android del proyecto.
 
-Si deseas adquirir el código fuente, y una explicación general de cómo funciona esta aplicación, puedes hacerlo a través de la siguiente opción.
+Si deseas adquirir el código fuente, y una sesión de asesoría sobre cómo funciona laa app, puedes hacerlo a través de la siguiente opción.
 
 <div markdown="span" class="text-center">
-	<a class="button" href="https://transactions.sendowl.com/products/524187/EFA78824/purchase" rel="nofollow">
+	<a class="button" href="https://gum.co/laravel-incidencias?wanted=true" target="_blank" data-gumroad-single-product="true">
 		Deseo adquirir el proyecto completo
 	</a>
 </div>
 
-<small>Muy pronto grabaré un curso explicando paso a paso cómo desarrollar la versión Android de este proyecto.
-Si adquieres el código fuente ahora mismo, tendrás acceso al curso como cortesía sin pagos adicionales.</small>
+<script src="https://gumroad.com/js/gumroad.js"></script>
 
-<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
 
-{% comment %}
-
-Adquirir la parte final de la serie significa:
-
-- Tener acceso a la última versión del código fuente web
-- Tener acceso al código fuente del proyecto Android correspondiente
-- Tener acceso de por vida a todas las actualizaciones de este sistema
-
-Además, de forma opcional podrás solicitar asesoría personalizada por una hora. 
-Así, yo mismo te ayudaré a desplegar la aplicación a un servidor de Digital Ocean, de forma que la plataforma funcione tanto en web como en móvil y la puedas usar con tu equipo de trabajo o para el fin que creas conveniente.
-
-{% endcomment %}
+Gracias por tu visita. Recuerda dejar un comentario si tienes alguna duda.
 
 [serie]: https://www.youtube.com/playlist?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG
