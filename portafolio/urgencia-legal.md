@@ -71,6 +71,10 @@ Existen 2 modalidades para adquirir este sistema web, según el uso que se le de
         <p>Incluye 30 minutos de asesoría donde te explicaré de forma general cómo se llevó a cabo el proceso de desarrollo.</p>
         <p>Podrás modificar y usar el proyecto de la forma que te parezca adecuada.</p>
         <p><small>No incluye ningún tipo de cambio en el sistema por mi parte.</small></p>
+        <script src="https://gumroad.com/js/gumroad.js"></script>
+        <a class="button" href="https://gum.co/urgencia-legal?wanted=true" data-gumroad-single-product="true">
+            Comprar ahora
+        </a>
     </div>
     <div class="six columns end">
         <h3>Proyecto</h3>
@@ -84,7 +88,7 @@ Existen 2 modalidades para adquirir este sistema web, según el uso que se le de
     </div>
 </div>
 
-Para más información, por favor visita la [**sección de contacto**][contact].
+Si tienes alguna consulta, por favor visita la [**sección de contacto**][contact].
 
 Si deseas volver a la **lista de proyectos**, haz [clic aquí][portfolio].
 
