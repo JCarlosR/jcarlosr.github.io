@@ -73,7 +73,7 @@ Existen 2 modalidades para adquirir este sistema web, según el uso que se le de
         <p><small>No incluye ningún tipo de cambio en el sistema por mi parte.</small></p>
         <script src="https://gumroad.com/js/gumroad.js"></script>
         <a class="button" href="https://gum.co/urgencia-legal?wanted=true" data-gumroad-single-product="true">
-            Comprar ahora
+            Obtener código fuente
         </a>
     </div>
     <div class="six columns end">

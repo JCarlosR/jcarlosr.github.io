@@ -38,9 +38,15 @@ El principal evento del juego es el "arrastrar" un elemento gráfico sobre otro 
 
 ## ¿Necesitas un juego similar a este?
 
-- Si deseas estudiar el código fuente de este juego, o editarlo, puedes adquirirlo a un precio bastante cómodo. Solo usa el formulario de contacto para recibir más detalles.
+- Si deseas estudiar el código fuente de este juego, o editarlo, puedes adquirirlo ahora mismo simplemente usando el siguiente botón:
 
-- De la misma forma, si quieres que desarrollemos un juego basado en navegador, usa el formulario de contacto. El juego **puede ser mucho más complejo**, solo cuéntanos lo que necesitas.
+<script src="https://gumroad.com/js/gumroad.js"></script>
+
+<div class="text-center">
+	<a class="button" href="https://gum.co/reciclaje?wanted=true" data-gumroad-single-product="true">Obtener código fuente</a>	
+</div>
+
+- Por otro lado, si quieres que desarrollemos un juego basado en navegador, usa el formulario de contacto. El juego **puede ser mucho más complejo**, solo cuéntanos lo que necesitas.
 
 Puedes contarnos tu situación accediendo a la [**sección de contacto**][contact].
 
