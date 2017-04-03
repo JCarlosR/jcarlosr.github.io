@@ -1,6 +1,6 @@
 # Site settings
 title: Programación y más
-description: 'Aprende a programar desde cero. Desarrolla sitios web y aplicaciones móviles. Tutoriales sobre HTML5, CSS3, Javascript, PHP, Laravel, MySQL, Android y más.'
+description: 'Aprende a programar sitios web y aplicaciones móviles. Tutoriales sobre HTML5, CSS3, Javascript, PHP, Laravel, MySQL, Android y más.'
 url: 'https://programacionymas.com'
 baseurl: ''
 google_analytics: 'UA-26345705-3'
