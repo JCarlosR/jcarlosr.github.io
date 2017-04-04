@@ -11,7 +11,9 @@ description: "¿Te gustaría aprender a desarrollar aplicaciones Android? Accede
 En este nuevo **curso de Android** vamos a aprender a desarrollar una aplicación de Diagnóstico Médico Veterinario.
 
 <div class="text-center">
+<a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbI_qvEzuvMhA0xNsKnK1qid" target="_blank">
   <img src="/images/tutoriales/diagnostic-vet.png" alt="App Android Diagnostic Vet" class="img-responsive" width="480">
+</a>
 </div>
 
 ## Diagnostic Vet
