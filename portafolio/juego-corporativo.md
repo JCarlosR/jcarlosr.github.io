@@ -2,6 +2,7 @@
 layout: page
 title: Juego de preguntas y respuestas
 image: portfolio/juego-corporativo/cover.png
+description: Juego de preguntas y respuestas + Juego de cartas + Envío de mail
 ---
 
 <p class="text-center">

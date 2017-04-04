@@ -3,8 +3,6 @@ layout: default
 permalink: /contacto
 ---
 
-<!-- Page Title
-================================================== -->
 <div id="page-title">
 	<div class="row">
 
@@ -14,76 +12,78 @@ permalink: /contacto
 		</div>
 
 	</div>
-</div> <!-- Page Title End-->
+</div>
 
 
 <!-- Content
 ================================================== -->
-	<div class="content-outer">
-		<div id="page-content" class="row page">
-			<div id="primary" class="ten columns offset-1">
-				<section>
+<div class="content-outer">
+	<div id="page-content" class="row page">
+		<div id="primary" class="ten columns offset-1">
+			<section>
 
-					<p>Hola.</p>
+				<p>Hola.</p>
 
-					<p>Si tienes duda sobre algún tutorial, deja tu comentario en el artículo o video correspondiente. De esta forma las dudas resueltas quedan disponibles para todos.</p>
+				<p>Si tienes duda sobre algún tutorial, deja tu comentario en el artículo o video correspondiente. De esta forma las dudas resueltas quedan disponibles para todos.</p>
 
-					<p>Por otro lado, si tienes dudas sobre algo que no está presente en los videos o ayuda en un tema específico, por favor considera <a href="/asesoria">solicitar asesoría</a>. 
+				<p>Por otro lado, si tienes dudas sobre algo que no está presente en los videos o ayuda en un tema específico, por favor considera <a href="/asesoria">solicitar asesoría</a>. 
 
-					<hr>
+				<hr>
 
-					<p>Para todo lo demás, por favor usa el <strong>formulario de contacto</strong>:</p>
+				<p>Para todo lo demás, por favor usa el <strong>formulario de contacto</strong>:</p>
 
-					<h2>Formulario de contacto</h2>
-					<div id="contact-form">
+				<h2>Formulario de contacto</h2>
+				<div id="contact-form">
 
-						<!-- form -->
-						<form name="contactForm" id="contactForm" method="POST" action="">
-							<fieldset>
-								<div class="half">
-									<label for="contactName">Nombre <span class="required">*</span></label>
-									<input name="contactName" type="text" id="contactName" size="35" required />
-								</div>
+					<!-- form -->
+					<form name="contactForm" id="contactForm" method="POST" action="">
+						<fieldset>
+							<div class="half">
+								<label for="contactName">Nombre <span class="required">*</span></label>
+								<input name="contactName" type="text" id="contactName" size="35" required />
+							</div>
 
-								<div class="half pull-right">
-									<label for="contactEmail">E-mail <span class="required">*</span></label>
-									<input name="contactEmail" type="email" id="contactEmail" size="35" required />
-								</div>
+							<div class="half pull-right">
+								<label for="contactEmail">E-mail <span class="required">*</span></label>
+								<input name="contactEmail" type="email" id="contactEmail" size="35" required />
+							</div>
 
-								<div>
-									<label for="contactSubject">Motivo</label>
-									<select name="contactSubject" id="contactSubject" required>
-										<option value="">Seleccione motivo de contacto</option>
-										<option value="Proyecto">Quisiera cotizar un proyecto</option>
-										<option value="Propuesta">Me gustaría hacerte una propuesta</option>
-										<option value="Sugerencia">Es una sugerencia</option>
-									</select>
-								</div>
+							<div>
+								<label for="contactSubject">Motivo</label>
+								<select name="contactSubject" id="contactSubject" required>
+									<option value="">Seleccione motivo de contacto</option>
+									<option value="Proyecto">Quisiera cotizar un proyecto</option>
+									<option value="Propuesta">Me gustaría hacerte una propuesta</option>
+									<option value="Sugerencia">Es una sugerencia</option>
+									<option value="Afiliado">Quiero ser afiliado</option>
+									<option value="Error">Quiero reportar un error</option>
+								</select>
+							</div>
 
-								<div>
-									<label  for="contactMessage">Mensaje <span class="required">*</span></label>
-									<textarea name="contactMessage" id="contactMessage" rows="12" cols="50" required></textarea>
-								</div>
+							<div>
+								<label for="contactMessage">Mensaje <span class="required">*</span></label>
+								<textarea name="contactMessage" id="contactMessage" rows="12" cols="50" required></textarea>
+							</div>
 
-								<div>
-									<button type="submit" class="submit" id="contactButton">Enviar</button>
-									<span id="image-loader">
-										<img src="/images/loader.gif" alt="" />
-									</span>
-								</div>
+							<div>
+								<button type="submit" class="submit" id="contactButton">Enviar</button>
+								<span id="image-loader">
+									<img src="/images/loader.gif" alt="" />
+								</span>
+							</div>
 
-							</fieldset>
-						</form> <!-- Form End -->
+						</fieldset>
+					</form> <!-- Form End -->
 
-						<div id="message-warning"></div>
+					<div id="message-warning"></div>
 
-						<div id="message-success">
-							<i class="icon-ok"></i>
-							Tu mensaje se ha enviado con éxito! Recibirás una respuestas en breve.<br />
-						</div>
+					<div id="message-success">
+						<i class="icon-ok"></i>
+						Gracias por tu mensaje! Recibirás una respuesta en breve.<br />
 					</div>
+				</div>
 
-				</section> <!-- section end -->
-			</div>
+			</section> <!-- section end -->
 		</div>
-	</div> <!-- Content End-->
+	</div>
+</div> <!-- Content End-->
