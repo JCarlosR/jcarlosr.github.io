@@ -81,7 +81,7 @@
      {% endif %}
 
 	{% if site.author.youtube_username %}
-     <div class="six columns">
+    <div class="six columns">
 		<script src="https://apis.google.com/js/platform.js"></script>
 		<script>
 		function onYtEvent(payload) {
@@ -96,15 +96,17 @@
 			}
 		}
 		</script>
-		<div class="g-ytsubscribe" data-channel="{{ site.author.youtube_username }}" data-theme="dark" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
+		<div class="g-ytsubscribe" data-channel="{{ site.author.youtube_username }}" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
 		<div id="ytsubscribe-events-log"></div>
 
         <ul class="copyright">
            <li>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.title }}</li>
         </ul>
-     </div>
-     {% endif %}
+    </div>
+    {% endif %}
 
+	<!-- Código de instalación CLIENGO para programacionymas.com --> 
+	<script>(function(){var ldk=document.createElement('script'); ldk.type='text/javascript'; ldk.async=true; ldk.src='https://s.cliengo.com/weboptimizer/58e1372ae4b0daaa862cd5e7/58e1372ce4b0daaa862cd5eb.js' ; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);})();</script>
 </div>
 </footer> <!-- Footer End-->
 

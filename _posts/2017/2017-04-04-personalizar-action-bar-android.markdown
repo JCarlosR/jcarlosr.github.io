@@ -146,9 +146,9 @@ El resultado fue el siguiente:
 Toolbar vacío
 ---
 
-> Amigo, lo he implementado y funciona de maravilla. Pero espera, veo un agujero negro.
+> Amigo, lo he implementado y funciona de maravilla. Pero espera, veo un vacío existencial.
 
-Eso es muy interesante, pero tranquilo. Creo que te refieres a lo siguiente, ¿verdad?
+Creo que te refieres a lo siguiente, ¿verdad?
 
 <div class="text-center">
     <img src="/images/posts/2017/toolbar/toolbar-vacio.jpg" alt="Toolbar vacío" title="Toolbar vacío" width="280">
@@ -156,6 +156,7 @@ Eso es muy interesante, pero tranquilo. Creo que te refieres a lo siguiente, ¿v
 
 Te entiendo, no hay nada más triste en esta vida que un Toolbar vacío.
 
+Por favor sigue la serie en el canal para no quedarte a mitad del camino, mientras yo actualizo esta entrada.
 
 ¿Te has perdido en algún punto?
 ---
