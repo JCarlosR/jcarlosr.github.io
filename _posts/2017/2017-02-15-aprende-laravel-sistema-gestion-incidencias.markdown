@@ -70,11 +70,16 @@ Con Laravel siento que no necesito nada más, ya que **la gran cantidad de paque
 
 No digo que Laravel es el mejor framework. Simplemente quiero mostrarte, si estás iniciando en el desarrollo backend, o tienes un tiempo sin animarte a usar un framework para PHP, que **Laravel es una muy buena opción** para empezar.
 
-No se diga más
+Empieza por aquí
 ---
-Si estás interesado en **aprender de forma gratuita**, a desarrollar el sistema de gestión de incidencias que antes te comenté, y desde cero, entonces es momento de que inicies con la serie haciendo clic en la siguiente imagen:
+Si estás interesado en **aprender de forma gratuita**, a desarrollar el sistema de gestión de incidencias que antes te comenté, y desde cero, entonces **es momento que inicies con la serie haciendo clic en la siguiente imagen**:
 
-![Aprender Laravel de forma práctica](https://i.ytimg.com/vi/0iqYkOy4ups/hqdefault.jpg?custom=true&w=320&h=180&stc=true&jpg444=true&jpgq=90&sp=68)
+<div class="text-center">
+	<a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG">
+		<img src="https://i.ytimg.com/vi/0iqYkOy4ups/hqdefault.jpg?custom=true&w=320&h=180&stc=true&jpg444=true&jpgq=90&sp=68" alt="Aprender Laravel de forma práctica">
+	</a>
+</div>
+
 
 ¿Qué aprenderé?
 ---
@@ -140,7 +145,7 @@ Si quieres ver de antemano el listado de capítulos, aquí los tienes:
    
 - **Capítulo 29:** Discusión
 
-Versión Android
+Versión Android (Opcional)
 ---
 Si has terminado de ver todos los videos, te comento que también existe una versión en Android del proyecto.
 
@@ -148,7 +153,7 @@ Si deseas adquirir el código fuente, y una sesión de asesoría sobre cómo fun
 
 <div markdown="span" class="text-center">
 	<a class="button" href="https://gum.co/laravel-incidencias?wanted=true" target="_blank" data-gumroad-single-product="true">
-		Deseo adquirir el proyecto completo
+		Adquirir la versión Android
 	</a>
 </div>
 
