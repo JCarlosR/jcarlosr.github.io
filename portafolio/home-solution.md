@@ -2,6 +2,7 @@
 layout: page
 title: Home Solution
 image: portfolio/home-solution/cover.png
+description: ¿Necesitas ayuda con el desarrollo de una app móvil? Mira nuestro portafolio. Home Solution es una app que hemos desarrollado.
 ---
 
 <p class="text-center">

@@ -2,6 +2,7 @@
 title:  "Scrum en 30 segundos"
 categories: [Buenas prácticas]
 tags: [scrum, agile]
+description: ¿Buscas una definición breve sobre Scrum? Aprende lo mínimo y necesario para saber de qué trata.
 ---
 
 ¿Buscas una definición breve sobre Scrum?

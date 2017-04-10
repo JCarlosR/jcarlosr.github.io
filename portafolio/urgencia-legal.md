@@ -2,6 +2,7 @@
 layout: page
 title: Urgencia Legal
 image: portfolio/urgencia-legal/categories.png
+description: ¿Tienes una idea y necesitas ayuda para el desarrollo? Hemos desarrollado una plataforma web que conecte profesionales con clientes. Mira nuestro portafolio.
 ---
 
 <p class="text-center">

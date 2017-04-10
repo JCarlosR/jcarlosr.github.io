@@ -2,6 +2,7 @@
 title: "Sprint Review Meeting y Sprint Retrospective"
 categories: [Buenas prácticas]
 tags: [scrum, agile]
+description: Sprint Review Meeting y Sprint Retrospective. ¿Qué son y en qué se diferencian?
 ---
 
 ¿Qué son y en qué se diferencian?

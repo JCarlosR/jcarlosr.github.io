@@ -2,6 +2,7 @@
 layout: page
 title: Jordi Adsera
 image: portfolio/jordi-adsera/cover.jpg
+description: ¿Necesitas un sitio web? Mira nuestro portafolio. Nosotros desarrollamos sitios web responsive.
 ---
 
 <p class="text-center">

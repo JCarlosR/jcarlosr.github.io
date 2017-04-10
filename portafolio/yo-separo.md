@@ -2,13 +2,14 @@
 layout: page
 title: Yo Separo
 image: portfolio/yo-separo/cover.png
+description: Solicita el desarrollo de proyectos según tus requerimientos. Hemos desarrollado juegos basados en navegador. Mira nuestro portafolio.
 ---
 
 <p class="text-center">
 	<img src="/images/portfolio/yo-separo/cover.png" alt="Imagen grande de Yo Separo" title="Captura de introducción a Yo Separo">
 </p>
 
-**Yo Separo** es una **juego web interactivo** que busca concientizar, y educar una cultura del reciclaje.
+**Yo Separo** es una **juego web interactivo** que busca concientizar, y educar una cultura de reciclaje.
 
 <p class="text-center">
 	<img src="/images/portfolio/yo-separo/demo.gif" alt="Gif de Yo Separo" title="Breve demo de Yo Separo">
