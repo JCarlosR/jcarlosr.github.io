@@ -7,22 +7,34 @@ image: posts/2017/laravel-gestion-incidencias.png
 
 La intención de este tutorial es demostrar **lo fácil y práctico que resulta usar Laravel** para desarrollar un sistema web.
 
-El primer lenguaje backend que aprendí fue PHP (de seguro, al igual que una gran mayoría), y desarrollé mis primeros sistemas escribiendo "PHP puro". Es decir, desarrollaba sin usar un framework en particular. 
+De PHP a Laravel
+---
 
-Ello significa organizar todos los archivos de mi proyecto por mi cuenta. Es genial porque conozco perfectamente lo que uso, pero a cambio tengo que hacer todo a mano.
+El primer lenguaje backend que aprendí fue PHP (de seguro, al igual que una gran mayoría), y desarrollé mis primeros sistemas escribiendo "PHP puro". 
+
+Es decir, desarrollaba sin usar un framework en particular. 
+
+Ello implicaba organizar todos los archivos del proyecto por mi cuenta. 
+
+Por un lado es genial, porque uno conoce perfectamente lo que usa, pero a cambio se tiene que hacer todo a mano.
 
 De pronto tenía 2 caminos
 ---
 Uno de ellos era probar varios frameworks y luego decidir cuál me resultaba más cómodo, a fin de conocerlo mejor y comenzar a usarlo para la mayoría de mis proyectos.
-El otro camino consistía en organizar el código que ya había usado en mis desarrollos anteriores, y formar mi propio estándar.
+
+**El otro camino** consistía en organizar el código que ya había usado en mis desarrollos anteriores, y formar mi propio estándar.
 
 El inconveniente de lo segundo es que, de pronto cuando tuviera que trabajar en conjunto con más personas, tendría que explicarles cómo es que funciona y cómo se organiza la base de código que uso para mis proyectos. 
 
-De hecho tendría que escribir una documentación para que quienes trabajen conmigo acepten mi proyecto base como el suyo. En pocas palabras, es casi como tener que crear un framework propio y luego convencer a los demás de usarlo.
+De hecho tendría que escribir una documentación para que quienes trabajen conmigo acepten mi proyecto base como el suyo. 
+
+En pocas palabras, es casi como tener que crear un framework propio y luego convencer a los demás de usarlo.
+
+¿La solución?
 
 Mi primer acercamiento a Laravel
 ---
-Vamos a darle una probada a este framework del que todo el mundo habla recientemente, me dije.
+_Vamos a probar este framework del que todo el mundo habla recientemente_, me dije.
 
 Así fue como accedí a la documentación oficial de Laravel por primera vez, y a leer los primeros tutoriales que encontraba.
 
@@ -60,7 +72,7 @@ Para demostrarte lo sencillo y útil que resulta usar Laravel, he grabado una se
 
 Esta serie de tutoriales se encuentra disponible en Youtube y muestra de forma práctica cómo desarrollar un sistema de gestión de incidencias, todo **sin costo alguno**.
 
-¿Por qué lo hago?
+¿Por qué Laravel?
 ---
 La verdad es que me gusta compartir lo que aprendo, principalmente si la tecnología resulta de mi agrado.
 
@@ -75,9 +87,7 @@ Empieza por aquí
 Si estás interesado en **aprender de forma gratuita**, a desarrollar el sistema de gestión de incidencias que antes te comenté, y desde cero, entonces **es momento que inicies con la serie haciendo clic en la siguiente imagen**:
 
 <div class="text-center">
-	<a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG">
-		<img src="https://i.ytimg.com/vi/0iqYkOy4ups/hqdefault.jpg?custom=true&w=320&h=180&stc=true&jpg444=true&jpgq=90&sp=68" alt="Aprender Laravel de forma práctica">
-	</a>
+	<iframe width="858" height="480" src="//www.youtube.com/embed/videoseries?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG&vq=hd720" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -145,21 +155,71 @@ Si quieres ver de antemano el listado de capítulos, aquí los tienes:
    
 - **Capítulo 29:** Discusión
 
-Versión Android (Opcional)
+Material adicional
 ---
-Si has terminado de ver todos los videos, te comento que también existe una versión en Android del proyecto.
+Mi sugerencia es que veas la serie en orden.
 
-Si deseas adquirir el código fuente, y una sesión de asesoría sobre cómo funciona laa app, puedes hacerlo a través de la siguiente opción.
+Así podrás **desarrollar tú mismo el sistema web paso a paso**.
 
-<div markdown="span" class="text-center">
-	<a class="button" href="https://gum.co/laravel-incidencias?wanted=true" target="_blank" data-gumroad-single-product="true">
-		Adquirir la versión Android
-	</a>
-</div>
+Pero, aquí te dejo **contenido adicional** por si deseas reforzar alguno de los temas:
 
+### Si estás iniciando
+- [Cómo crear mi primer CRUD en Laravel][crud-laravel]
+- [Cómo registrar y validar en Laravel][validar-laravel]
+- [Aprende a restringir el acceso solo a administradores][middleware-admin]
+- [Cómo subir imágenes usando Laravel, y cómo reducir su tamaño][upload-images]
+- [Redirgir a un usuario a una página u otra según su rol][redirigir-rol]
+
+### Temas intermedios
+- [Eventos o Triggers en Laravel][model-events]
+- [Exportar archivos Excel usando Laravel][excel-laravel]
+- [Aprende a enviar mensajes SMS usando Twilio y Laravel][twilio-tutorial]
+
+### Muy importantes
+- [Cómo añadir más columnas en las migraciones sin perder los datos][nuevas-migraciones]
+- [Aprende a validar el correo de tus usuarios en Laravel, usando un correo de confirmación][email-confirm]
+- [Organiza tu proyecto Laravel adecuadamente en carpetas][laravel-folders]
+
+### Temas adicionales
+- [Cómo subir tu app Laravel a un hosting fácilmente][deploy-laravel]
+- [Cómo usar Laravel en conjunto con VueJS][vue-js]
+
+Continuación: Versión Android
+---
+Si has terminado de ver todos los videos, te comento que también existe una versión Android del proyecto.
+
+Aunque aun estoy preparando la [serie de tutoriales sobre Android][tutos-android], de este mismo sistema.
+
+Conclusión
+---
+
+Laravel es el framework PHP más usado en la actualidad.
+
+Y su popularidad se debe principalmente a que es muy fácil y práctico de usar, incluso desde sus inicios.
+
+Por mi parte, espero que te hayas animado a darle una oportunidad a este framework.
+
+Gracias por tu visita. Y recuerda dejar un comentario si tienes alguna duda!
+
+___
+
+<p class="text-muted">Si deseas usar el sistema tanto en su <strong>versión web y móvil</strong>, y revisar el código fuente para potenciar tu aprendizaje, puedes
+<a href="https://gum.co/laravel-incidencias?wanted=true" target="_blank" data-gumroad-single-product="true">adquirir el sistema completo</a>.
+</p>
 <script src="https://gumroad.com/js/gumroad.js"></script>
 
 
-Gracias por tu visita. Recuerda dejar un comentario si tienes alguna duda.
-
-[serie]: https://www.youtube.com/playlist?list=PLzSFZWTjelbJTgPatTzeF1fvoMsqawntG
+[crud-laravel]: https://www.youtube.com/watch?v=EWSSxd0Cb1o&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=1
+[validar-laravel]: https://www.youtube.com/watch?v=jvhZLtgar-k&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=2
+[middleware-admin]: https://www.youtube.com/watch?v=3sYpKhF6B0k&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=3
+[upload-images]: https://www.youtube.com/watch?v=ErU7mcIYPwA&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=4
+[redirigir-rol]: https://www.youtube.com/watch?v=7ALqpT7JpB4&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=5
+[model-events]: https://www.youtube.com/watch?v=jcoHSzZKrQs&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=6
+[excel-laravel]: https://www.youtube.com/watch?v=s-ZeszfCoEs&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=9
+[nuevas-migraciones]: https://www.youtube.com/watch?v=G_BPA6566qA&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=10
+[email-confirm]: /blog/confirmar-email-laravel
+[laravel-folders]: https://www.youtube.com/watch?v=Ktu9XXCfAaM&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=12
+[twilio-tutorial]: https://www.youtube.com/watch?v=fSgb8LiY2B4&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=13
+[deploy-laravel]: /blog/hacer-deploy-app-laravel-digital-ocean
+[vue-js]: https://www.youtube.com/watch?v=AUQceG6ZBy0&list=PLzSFZWTjelbIi1UJ3WZZK8vVzgmhjAq25&index=15
+[tutos-android]: https://www.youtube.com/playlist?list=PLzSFZWTjelbI_qvEzuvMhA0xNsKnK1qid
