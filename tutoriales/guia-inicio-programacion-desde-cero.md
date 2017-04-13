@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-permalink: /guia-de-inicio/programacion-y-mas
+permalink: /guia-de-inicio/programacion-y-mas/
 image: tutoriales/desarrollo-web-intranet-php.png
 title: "Guía de inicio en la Programación"
 subtitle: "Aprende a programar lo que te apasiona."

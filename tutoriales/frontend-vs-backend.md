@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-permalink: /frontend-vs-backend
+permalink: /frontend-vs-backend/
 image: tutoriales/frontend-vs-backend.jpg
 title: "Desarrollo web: Frontend vs Backend"
 subtitle: "Aprende a diferenciar las tecnologías de lado del cliente y de lado del servidor."

@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-permalink: /curso-android-diagnostic-vet
+permalink: /curso-android-diagnostic-vet/
 image: tutoriales/diagnostic-vet.png
 title: "Curso Android: App de Diagnóstico Médico"
 subtitle: "Aprende a programar en Android de forma práctica"
