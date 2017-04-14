@@ -710,12 +710,12 @@ ul#nav ul li a {
 #call-to-action .action {
    margin-top: 12px;
 }
-#call-to-action h1 {
+#call-to-action h2 {
    font: 34px/42px raleway-bold, sans-serif;
    color: #E4E2E2;
    margin-bottom: 3px;
 }
-#call-to-action h1 a {
+#call-to-action h2 a {
    color: inherit;
 }
 #call-to-action p {

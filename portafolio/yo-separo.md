@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Yo Separo
 image: portfolio/yo-separo/cover.png
+title: Juego de reciclaje usando Javascript y Canvas (Código fuente)
 description: Solicita el desarrollo de proyectos según tus requerimientos. Hemos desarrollado juegos basados en navegador. Mira nuestro portafolio.
 ---
 

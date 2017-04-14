@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Juego de preguntas y respuestas
+title: Juego de preguntas y respuestas (Código fuente)
 image: portfolio/juego-corporativo/cover.png
 description: Juego de preguntas y respuestas + Juego de cartas + Envío de mail
 ---
