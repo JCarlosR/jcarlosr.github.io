@@ -30,6 +30,6 @@ Si les interesa tener un blog similar a este, pueden ver la [documentación de j
 
 Si tienen alguna duda, para cualquiera de las publicaciones, no duden en comentar. Sobre todo ahora que los comentarios funcionan gracias a Disqus !
 
-[canal]: http://youtube.com/sorcjc
+[canal]: https://youtube.com/sorcjc
 [blog]: https://programacion-innata.blogspot.pe/
-[jekyll]: http://jekyllrb.com
+[jekyll]: https://jekyllrb.com
