@@ -31,7 +31,7 @@ layout: default
                     <div class="tags">
                       <span>Etiquetas &rarr;</span>
                       {% for tag in page.tags %}
-                      <a href="/tags/#{{ tag }}">{{ tag }}</a> /
+                      <a href="/tags/#{{ tag }}" class="button-small">{{ tag }}</a>
                       {% endfor %}
 
                       {% include share.html %}
