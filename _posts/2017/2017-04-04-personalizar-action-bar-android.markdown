@@ -54,11 +54,15 @@ Para deshabilitar el ActionBar lo dejaré de la siguiente forma:
 A tener en cuenta
 ---
 
-Ten en cuenta que modificar el ```AppTheme``` **afectará a todos tus activities**, por lo que será necesario definir un Toolbar para cada pantalla.
+Ten en cuenta que modificar los estilos del ```AppTheme``` **afectará a todos tus activities**. Eso haría necesario definir un Toolbar para cada pantalla.
 
-Si deseas evitar ello, **una alternativa** es crear un ```theme``` adicional, aparte del ```AppTheme``` y asignarás este tema a los activities que consideres necesario.
+Si deseas tener un ActionBar personalizado para cada activity no hay problema.
 
-Por ejemplo, puedes crear un nuevo ```theme``` a partir del ```AppTheme```:
+Pero si solo quieres personalizar el ActionBara para una pantalla en específico, **una alternativa** es crear un ```theme``` adicional, aparte del ```AppTheme```.
+
+De esa forma podrás asigna este tema en particular a los activities que consideres necesario.
+
+Puedes crear un nuevo ```theme``` a partir del ```AppTheme```, de esta manera:
 
 {% highlight xml %}
 <style name="AppTheme.NoActionBar" parent="AppTheme">
@@ -67,11 +71,13 @@ Por ejemplo, puedes crear un nuevo ```theme``` a partir del ```AppTheme```:
 </style>
 {% endhighlight %}
 
-Ello hará que herede los mismos estilos, pero que adicionalmente **deshabilite el ActionBar**.
+En este caso, el tema ```AppTheme.NoActionBar``` herede de ```AppTheme```, por lo que tendrá los mismos colores definidos, pero que adicionalmente **deshabilitará el ActionBar**.
 
-Entonces, supongamos que tienes un activity llamado ```DiseasesActivity```.
+Una vez que has definido el tema, lo siguiente es aplicarlo a los activities para los que quieres crear un ActionBar personalizado.
 
-Para aplicar el tema solo a este activity, debes ir al ```manifest``` y especificarlo de esta forma:
+Supongamos que tienes un activity llamado ```DiseasesActivity```, y que a solo a este activity le quieres aplicar los cambios.
+
+Para ello debes ir al ```manifest``` y especificarlo de esta forma:
 
 ![Aplicar tema a un Activity](/images/posts/2017/toolbar/deshabilitar-actionbar-theme.png)
 
@@ -154,15 +160,87 @@ Creo que te refieres a lo siguiente, ¿verdad?
     <img src="/images/posts/2017/toolbar/toolbar-vacio.jpg" alt="Toolbar vacío" title="Toolbar vacío" width="280">
 </div>
 
-Te entiendo, no hay nada más triste en esta vida que un Toolbar vacío.
+Te entiendo, no hay nada más triste que un Toolbar vacío.
 
-Por favor sigue la serie en el canal para no quedarte a mitad del camino, mientras yo actualizo esta entrada.
+Pero tranquilo, ahora le vamos a dar vida.
+
+Personalizando el ActionBar
+---
+
+Para este ejemplo, esto es lo que queremos lograr:
+
+<div class="text-center">
+    <img src="/images/posts/2017/toolbar/ejemplo-action-bar-personalizado.png" alt="Toolbar de ejemplo" title="Toolbar de ejemplo" width="280">
+</div>
+
+Eso significa que dentro de nuestro Toolbar vamos a poner **una imagen y un texto subrayado**.
+
+¿Qué te parece si usamos un LinearLayout con orientación horizontal?
+
+Este va a contener a la imagen y a otro LinearLayout.
+
+El segundo LinearLayout va a contener al texto y a un View, representando la barra blanca horizontal como subrayado del texto.
+
+Así tenemos:
+
+{% highlight xml %}
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:textColor="#fff"
+                android:text="Diagnostic Vet"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <View
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_height="2dp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+{% endhighlight %}
+
+Y como resultado:
+<div class="text-center">
+    <img src="/images/posts/2017/toolbar/toolbar-resultado.png" alt="Toolbar resultante" title="Toolbar resultante" width="280">
+</div>
+
+Lo sé, el resultado no es exactamente el mismo.
+
+Pero creo que se ve bien :b
 
 ¿Te has perdido en algún punto?
 ---
 
 Si tienes dudas puedes comentar aquí debajo.
 
-Pero antes te recomiendo ver esta serie de tutoriales, sobre [**cómo crear desde cero una aplicación Android de diagnóstico médico**][diagnostic-vet-serie].
+Pero antes te recomiendo ver esta serie de tutoriales, sobre [**cómo crear desde cero una aplicación Android de diagnóstico médico veterinario**][diagnostic-vet-serie].
 
 [diagnostic-vet-serie]: https://www.youtube.com/watch?v=RpWzd0-_47o
