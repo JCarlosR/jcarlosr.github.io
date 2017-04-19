@@ -114,7 +114,7 @@ De tal forma que nuestro método ```handle``` quede de esta manera:
 <?php
 public function handle($request, Closure $next)
 {
-    if (auth()->user()->is_admin)
+    if (auth()->check() && auth()->user()->is_admin)
         return $next($request);
 
     return redirect('/');
@@ -125,10 +125,43 @@ Este último código se lee como:
 
 > Si el usuario autenticado es administrador, déjalo pasar, y si no, redirígelo a la ruta principal.
 
+Registrando nuestro middleware
+---
+
+Para facilitar el uso de nuestro middleware es importante registrarlo bajo un nombre.
+
+Vamos a ```app\Http\Kernel.php``` y en el siguiente arreglo vamos a agregar nuestro middleware:
+
+{% highlight php %}
+<?php
+protected $routeMiddleware = [
+    'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
+    'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+    'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    'can' => \Illuminate\Auth\Middleware\Authorize::class,
+    'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+    'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+];
+{% endhighlight %}
+
+Es decir, añadimos un elemento más:
+{% highlight php %}
+<?php
+protected $routeMiddleware = [
+    'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
+    'admin' => \App\Http\Middleware\AdminMiddleware::class,
+    'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+    'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    'can' => \Illuminate\Auth\Middleware\Authorize::class,
+    'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+    'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+];
+{% endhighlight %}
+
 Aplicando nuestro middleware
 ---
 
-¡Ya tenemos nuestro middleware creado!
+¡Ya tenemos nuestro middleware registrado!
 
 Solo falta aplicarlo.
 
@@ -147,6 +180,52 @@ Usar una u otra va a depender del proyecto que estés desarrollando.
 Por ejemplo, si el panel para administradores solo difiere un poco del panel de usuarios, es probable que solo quieras aplicar el middleware a un controlador.
 
 Sin embargo, si el administrador puede gestionar muchas entidades, a diferencia de un usuario regular, sería conveniente crear un grupo de rutas y aplicar el middleware a todas ellas.
+
+___
+
+Permíteme explicarlo a través de **un ejemplo**.
+
+Digamos que estoy desarrollando ahora mismo una aplicación donde los usuarios pueden conectarse y ver una serie de tutoriales, organizados por categorías.
+
+El usuario administrador debe ser el único que pueda editar la información de las series.
+
+Entonces, vamos a crear un grupo de rutas y aplicar el middleware ```admin``` sobre ellas:
+
+{% highlight php %}
+<?php
+Route::group(['middleware' => 'admin'], function () {
+    Route::get('/admin/series', 'Admin\SeriesController@index');
+    Route::get('/admin/series/{id}', 'Admin\SeriesController@edit');
+});
+{% endhighlight %}
+
+El código anterior funciona muy bien.
+
+Y hay 2 cosas que debemos tener en cuenta:
+
+- Ambas rutas se encuentran bajo el prefijo ```/admin```.
+- El controlador ```SeriesController``` se encuentra bajo el namespace ```Admin```.
+
+Podemos simplificar nuestro grupo de rutas de la siguiente manera:
+
+{% highlight php %}
+<?php
+Route::group([
+    'middleware' => 'admin',
+    'prefix' => 'admin',
+    'namespace' => 'Admin'
+], function () {
+    Route::get('/series', 'SeriesController@index');
+    Route::get('/series/{id}', 'SeriesController@edit');
+});
+{% endhighlight %}
+
+De tal forma que, podemos continuar añadiendo rutas a este grupo, y todas ellas:
+
+- Estarán validadas por el middlware ```admin```.
+- Tendrán como prefijo ```/admin```.
+- Sus controladores respectivos se encontrarán ubicados en ```App\Http\Controllers\Admin```.
+
 
 Conclusión
 ---
