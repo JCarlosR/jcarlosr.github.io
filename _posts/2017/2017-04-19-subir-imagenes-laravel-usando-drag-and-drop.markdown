@@ -282,5 +282,60 @@ Te recomiendo ver el siguiente video:
     <iframe width="858" height="480" src="//www.youtube.com/embed/ErU7mcIYPwA?vq=hd720" frameborder="0" allowfullscreen></iframe>   
 </div>
 
+___
+
+Extra 2: capturar la respuesta del servidor
+---
+
+Generalmente tenemos **una sección donde están todas las imágenes subidas**, y una segunda sección con el dropzone.
+
+Los usuarios pueden arrastrar y soltar sus imágenes sobre el área donde aplicamos el dropzone.
+
+Estas imágenes se subirán al instante. Pero, no se mostrarán en el listado de imágenes ya subidas.
+
+Si queremos mostrarlas de ese lado, es necesario usar el evento ```success``` de dropzone, para capturar la respuesta que se recibe desde el controlador, luego de una subida exitosa.
+
+Entonces, en nuestro controlador devolvemos la información de la imagen que se acaba de subir, añadiendo una línea al final del método ```upload```:
+
+{% highlight php %}
+<?php
+public function upload($id, Request $request)
+{
+    $file = $request->file('file');
+    $path = public_path() . '/images/projects';
+    $fileName = uniqid() . $file->getClientOriginalName();
+
+    $file->move($path, $fileName);
+
+    $projectImage = new ProjectImage();
+    $projectImage->project_id = $id;
+    $projectImage->user_id = auth()->user()->id;
+    $projectImage->file_name = $fileName;
+    $projectImage->save();
+
+    return $projectImage;
+}
+{% endhighlight %}
+
+Y en nuestro Javascript capturamos esa respuesta:
+
+{% highlight js %}
+Dropzone.options.myAwesomeDropzone = {
+    paramName: "file", // The name that will be used to transfer the file
+    maxFilesize: 2, // MB
+    success: function (file, response) {
+        console.log(response);
+    }
+};
+{% endhighlight %}
+
+Así, obtenemos en la consola algo como lo siguiente:
+
+![Respuesta en la consola](/images/posts/2017/laravel-dropzone/console-log-response.png)
+
+Aquí lo que nos interesa es principalmente el atributo ```file_name```, ya que con este dato podemos renderizar la imagen que se acaba subir.
+
+Pero he devuelto toda la información para que veas que se puede **capturar la respuesta del servidor**.
+
 [dropzone-web]: http://www.dropzonejs.com/#installation
 [dropzone-cdn]: https://cdnjs.com/libraries/dropzone
