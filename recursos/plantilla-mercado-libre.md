@@ -20,4 +20,4 @@ Suscríbete a nuestro blog y descarga los materiales necesarios para que puedas 
 
 La descarga incluye las imágenes usadas en la plantilla y la plantilla HTML que usaremos como base.
 
-<script async id="_ck_192922" src="https://forms.convertkit.com/192922?v=6"></script>
+<script type="text/javascript" src="//static.mailerlite.com/data/webforms/385390/a3v0u3.js?v2"></script>
