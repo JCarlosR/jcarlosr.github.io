@@ -31,4 +31,4 @@ La app en realidad es genérica. Una vez que aprendas todos los conceptos, sigui
 
 Apúntate a través del siguiente formulario y recibe los recursos necesarios para que puedas empezar a seguir la serie!
 
-<script async id="_ck_176364" src="https://forms.convertkit.com/176364?v=6"></script>
+<script type="text/javascript" src="//static.mailerlite.com/data/webforms/385364/t2c9j8.js?v1"></script>
