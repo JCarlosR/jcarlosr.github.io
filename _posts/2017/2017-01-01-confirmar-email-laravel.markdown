@@ -72,7 +72,9 @@ class CreateUsersTable extends Migration {
 }
 ```
 
-## Registrando un usuario
+## Pasos a seguir
+
+Luego de haber añadido los campos ```confirmed``` y ```confirmation_code``` a la tabla de usuarios:
 
 1. Creamos una cadena aleatoria y la asignamos sobre el campo ```confirmation_code```. 
 Para ello solo usamos la función ```str_random()``` que recibe como argumento la longitud de la cadena que deseamos generar.
@@ -80,9 +82,9 @@ Para ello solo usamos la función ```str_random()``` que recibe como argumento l
 2. Enviamos un mail de verificación al usuario con el enlace correspondiente. 
 Para esto necesitamos crear un template para el mail, y luego hacer el envío usando ```Mail::send()```.
 
-> Recuerda que si estás usando ```User::create()```, debes definir la propiedad $fillable de tu modelo User con los campos username, email, password y confirmation_code.
+## Dónde hacer los cambios
 
-Si estás usando el sistema de autenticación que Laravel 5.2 genera (al usar ```php artisan make:auth```) tu código será identico al siguiente ejemplo. De caso contrario, simplemente debes añadir la lógica que hemos descrito justo luego de la validación de tu registro.
+Si estás usando el sistema de autenticación que Laravel genera (al usar ```php artisan make:auth```), debes modificar el método ```create``` de ```RegisterController``` (ubicado en ```app\Http\Controllers\Auth```). 
 
 ``` php
 <?php
@@ -107,14 +109,79 @@ protected function create(array $data)
 }
 ```
 
+> Recuerda que si estás usando ```User::create()```, debes definir la propiedad $fillable de tu modelo User con los campos username, email, password y confirmation_code.
 
-Hasta aquí llega nuestro ejemplo, pero recuerda que puedes implementar más características en torno a ello:
+## Plantilla del email de confirmación
 
-- Mostrar una alerta superior en todas las páginas para usuarios que aun no confirman su email.
-- Incluir en la alerta un enlace para "volver a enviar mail de confirmación".
+En el código anterior, el método ```send``` recibe como primer parámetro el template que se usará para el mail de confirmación.
 
-Por último, recuerda que también puedes [ver este tutorial en formato de video][canal] en nuestro canal de Youtube.
+El valor de ```emails.confirmation_code``` significa que dentro de ```resources/views``` debemos tener una carpeta **emails**, que contenga un archivo ```confirmation_code.blade.php``` representando el mail que vamos a enviar.
+
+Aquí te doy un ejemplo básico del que puedes partir:
+
+{% raw %}
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Hola {{ $name }}, gracias por registrarte en <strong>Programación y más</strong> !</h2>
+    <p>Por favor confirma tu correo electrónico.</p>
+    <p>Para ello simplemente debes hacer click en el siguiente enlace:</p>
+
+    <a href="{{ url('/register/verify/' . $confirmation_code) }}">
+        Clic para confirmar tu email
+    </a>
+</body>
+</html>
+```
+{% endraw %}
+
+## Enlace de verificación
+
+Hemos hablado de **verificar emails**, pero lo que hace esto verdaderamente posible, es el enlace de verificación que es enviado por mail.
+
+Y que debemos definir en nuestro archivo de rutas:
+
+{% highlight php %}
+<?php
+// E-mail verification
+Route::get('/register/verify/{code}', 'GuessController@verify');
+{% endhighlight %}
+
+Puedes usar la ruta que te parezca conveniente (por ejemplo ```/verificar/email/{code}```), siempre y cuando hagas ese cambio también en la plantilla del mail enviado.
+
+De tal forma que, cuando el usuario visite el enlace, el método ```verify``` resuelva la petición de esta manera:
+
+{% highlight php %}
+<?php
+public function verify($code)
+{
+    $user = User::where('confirmation_code', $code)->first();
+
+    if (! $user)
+        return redirect('/');
+
+    $user->confirmed = true;
+    $user->confirmation_code = null;
+    $user->save();
+
+    return redirect('/home')->with('notification', 'Has confirmado correctamente tu correo!');
+}
+{% endhighlight %}
+___
+
+Hasta aquí llega nuestro ejemplo, pero recuerda que puedes implementar **más características** en torno a ello:
+
+- Mostrar una **alerta superior** en todas las páginas para usuarios que aun no confirman su email.
+- Incluir en la alerta un enlace para "**volver a enviar mail de confirmación**".
+
+Por último, recuerda que también puedes ver este tutorial en formato de video:
+
+<div class="text-center">
+    <iframe width="858" height="480" src="//www.youtube.com/embed/D5fKth0MjP8?vq=hd720&rel=0" frameborder="0" allowfullscreen></iframe>   
+</div>
 
 Si tienes alguna duda, no dudes en comentar!
-
-[canal]: https://www.youtube.com/watch?v=D5fKth0MjP8

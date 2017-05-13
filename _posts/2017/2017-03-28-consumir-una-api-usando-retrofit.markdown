@@ -14,7 +14,7 @@ Por azares del destino es posible que aun no conozcas muy bien el significado de
 Pero don't worry. Puedes ver el siguiente video y aniquilar tus dudas:
 
 <div class="text-center">
-	<iframe width="858" height="480" src="//www.youtube.com/embed/SXZ0kDZbOas?vq=hd720" frameborder="0" allowfullscreen></iframe>	
+	<iframe width="858" height="480" src="//www.youtube.com/embed/SXZ0kDZbOas?vq=hd720&rel=0" frameborder="0" allowfullscreen></iframe>	
 </div>
 
 Este tutorial está centrado en cómo consumir una API o servicios web desde una aplicación Android.
