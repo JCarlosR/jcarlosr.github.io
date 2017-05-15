@@ -15,7 +15,7 @@ Podemos reutilizar componentes entre los emails que enviamos, usando Blade.
 
 En esta entrada vamos a ver cómo escribir un email como el siguiente en **3 sencillos pasos**:
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Email resultante usando Markdown en Laravel](/images/posts/2017/laravel-email-markdown/email-resultado-laravel.png)
 
 Pasos a seguir
 ---
