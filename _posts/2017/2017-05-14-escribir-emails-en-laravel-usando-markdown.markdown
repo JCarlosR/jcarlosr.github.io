@@ -105,34 +105,32 @@ Si lo deseamos, podemos definir un nuevo theme creando un nuevo archivo CSS en l
 A modo de ejemplo, yo he sobreescrito únicamente **el componente message**. Quedándome de esta manera:
 
 {% raw %}
-```markdown
-@component('mail::layout')
-{{-- Header --}}
-@slot('header')
-@component('mail::header', ['url' => config('app.url')])
-{{ config('app.name') }}
-@endcomponent
-@endslot
+    @component('mail::layout')
+    {{-- Header --}}
+    @slot('header')
+    @component('mail::header', ['url' => config('app.url')])
+    {{ config('app.name') }}
+    @endcomponent
+    @endslot
 
-![Logo de Programación y más][logo]
+    ![Logo de Programación y más][logo]
 
-{{-- Body --}}
-{{ $slot }}
+    {{-- Body --}}
+    {{ $slot }}
 
-{{-- Footer --}}
-@slot('footer')
-@component('mail::footer')
-© {{ date('Y') }} {{ config('app.name') }}. Todos los derechos reservados.
+    {{-- Footer --}}
+    @slot('footer')
+    @component('mail::footer')
+    © {{ date('Y') }} {{ config('app.name') }}. Todos los derechos reservados.
 
-Si no deseas recibir más correos, puedes [modificar tus preferencias][unsubscribe].
+    Si no deseas recibir más correos, puedes [modificar tus preferencias][unsubscribe].
 
-[unsubscribe]: {{ url('/configuracion') }}
-@endcomponent
-@endslot
+    [unsubscribe]: {{ url('/configuracion') }}
+    @endcomponent
+    @endslot
 
-[logo]: https://programacionymas.com/images/mago/mago-200x200.png
-@endcomponent
-```
+    [logo]: https://programacionymas.com/images/mago/mago-200x200.png
+    @endcomponent
 {% endraw %}
 
 Este componente message lo he puesto en ```resources/views/emails```. 
