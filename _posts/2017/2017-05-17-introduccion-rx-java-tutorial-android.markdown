@@ -113,7 +113,7 @@ El código que hemos escrito antes podemos simplificarlo usando el método ```Ob
 El Observable solo emita los valores definidos.
 
 **Además si cambiamos,**
-nuestro Subscriber por una clase anónima interna, tendremos los siguiente.
+nuestro Subscriber por una **clase anónima** interna, tendremos lo siguiente.
 
 ```java
 Observable.just(1, 2 ,3).subscribe(new Subscriber() {
@@ -188,7 +188,7 @@ Observable.just(1, 2, 3, 4, 5, 6) // números que recibe el Observable
 El operador ```filter()``` nos permite definir una función que recibirá todos los valores que "pretende emitir" el Observable.
 
 **En esta función:**
-Los valores devuelvan false no serán emitidos finalmente al Subscriber (por eso, en este caso, no se muestran en la salida). 
+Los valores que devuelvan false no serán emitidos finalmente al Subscriber (por eso, en este caso, no se muestran en la salida). 
 
 **Es importante notar que:***
 
