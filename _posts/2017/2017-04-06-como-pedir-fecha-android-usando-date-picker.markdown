@@ -18,13 +18,13 @@ Y resulta inviable para nosotros ponerlo directamente sobre nuestro formularios.
 Mostrando un DatePicker a través de un Dialog
 ---
 
-Así es. Para solucionar este inconveniente es que **vamos a mostrarlo a través de un cuadro de diálogo**:
+Así es. Para solucionar este inconveniente es que **vamos a mostrarlo a través de un cuadro de diálogo**.
 
 Entonces:
 
 - Cuando el usuario haga clic sobre un **EditText de solo lectura** (donde necesitamos la fecha),
 - vamos a **mostrar un DialogFragment** con un DatePicker en su interior, y
-- cuando el usuario seleccione una fecha, vamos a **capturar la fecha ingresada**
+- cuando el usuario seleccione una fecha, vamos a **capturar la fecha ingresada**.
 
 Existen varias formas de capturar la fecha ingresada por el usuario.
 

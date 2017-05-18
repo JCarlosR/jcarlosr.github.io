@@ -20,7 +20,7 @@
 /* ------------------------------------------------------------------ */
 body { background: #D2D8D8 url(../images/bg.jpg); }
 img { border-radius: 3px; }
-.content-outer { background: #fff }
+.content-outer { background: #efefef }
 
 /* page title */
 #page-title {
@@ -47,6 +47,7 @@ img { border-radius: 3px; }
 
 /* page content */
 #page-content {
+   background: #fafafa;
    padding-top: 27px;
    padding-bottom: 54px;
    margin: 0 auto;
@@ -801,8 +802,8 @@ ul#nav ul li a {
 .post h3,
 .post h4,
 .post h5 {
-   margin-top: .8em;
-   margin-bottom: .4em;
+   margin-top: 1em;
+   margin-bottom: .6em;
    font-family: "Roboto Slab", serif;
    font-weight: lighter;
    color: #333333;
