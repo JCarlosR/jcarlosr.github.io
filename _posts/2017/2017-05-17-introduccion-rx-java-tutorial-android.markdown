@@ -190,7 +190,7 @@ El operador ```filter()``` nos permite definir una función que recibirá todos 
 **En esta función:**
 Los valores que devuelvan false no serán emitidos finalmente al Subscriber (por eso, en este caso, no se muestran en la salida). 
 
-**Es importante notar que:***
+**Es importante notar que:**
 
 El operador ```filter()```devuelve un objeto Observable, al que nos suscribimos (tal como se hacía antes).
 
