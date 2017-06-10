@@ -67,6 +67,7 @@ layout: default
 
             </article><!-- Post End -->
 
+            {% if jekyll.environment == "production" %}
             <!-- Comments -->
             <div id="comments">
               {% if page.comments != false and site.disqus_shortname %}
@@ -74,7 +75,8 @@ layout: default
               {% endif %}
 
               {% if page.comments != false %}{% include disqus.html %}{% endif %}
-            </div> <!-- Comments End -->    
+            </div>
+            {% endif %}
         </div>        
     </div>
 
