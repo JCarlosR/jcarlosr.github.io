@@ -2,6 +2,7 @@
 title: "¿Qué son los módulos en Javascript? ¿Qué es CommonJS, AMD y ECMAScript 6?"
 categories: [Desarrollo web]
 tags: [javascript]
+image: posts/2017/javascript/modulos-javascript.png
 ---
 
 Aprende qué son los módulos en JavaScript: qué es CommonJS, AMD, System.js, require.js, ES2015, ECMAScript6 y Webpack.
