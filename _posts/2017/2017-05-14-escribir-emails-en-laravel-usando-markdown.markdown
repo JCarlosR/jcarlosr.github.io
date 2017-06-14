@@ -2,6 +2,7 @@
 title: "Escribir emails en Laravel usando Markdown"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/laravel-email-markdown/email-laravel-markdown.png
 ---
 
 Aprende a enviar emails usando markdown. Gracias a esta nueva característica de Laravel 5.4 no tienes que preocuparte más por escribir HTML y estilos CSS inline.

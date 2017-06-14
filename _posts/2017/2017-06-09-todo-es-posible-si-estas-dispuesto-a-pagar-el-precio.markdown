@@ -1,6 +1,7 @@
 ---
 title: "Todo es posible si estás dispuesto a pagar el precio"
 categories: [Productividad]
+image: posts/2017/productividad/todo-es-posible-si-estas-dispuesto.png
 ---
 
 ¿Quieres algo? Si verdaderamente lo deseas, puedes tenerlo. Solo tienes que pagar el precio.

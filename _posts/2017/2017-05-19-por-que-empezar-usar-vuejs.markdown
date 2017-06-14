@@ -2,6 +2,7 @@
 title: "¿Por qué empezar a usar VueJS? (Comparación con JQuery)"
 categories: [Desarrollo web]
 tags: [javascript]
+image: posts/2017/javascript/vuejs-vs-jquery-comparacion.png
 ---
 
 Esta guía explica por qué deberías usar VueJS, y no depender exclusivamente de JQuery, a través de ejemplos.

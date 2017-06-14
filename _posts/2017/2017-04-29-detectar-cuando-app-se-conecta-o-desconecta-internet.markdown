@@ -2,6 +2,7 @@
 title: "Detectar cuándo nuestra aplicación Android se conecta o desconecta de internet"
 categories: [Desarrollo móvil]
 tags: [android]
+image: posts/2017/android/evento-detectar-internet-o-wifi.png
 ---
 
 Aprende a DETECTAR los cambios de estado de la conexión a internet en tus proyectos Android.

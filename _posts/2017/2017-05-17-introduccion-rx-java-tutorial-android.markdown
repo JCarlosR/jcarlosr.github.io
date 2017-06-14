@@ -2,6 +2,7 @@
 title: "Introducción a RxJava: Tutorial desde cero (Con ejemplos)"
 categories: [Desarrollo móvil]
 tags: [android]
+image: posts/2017/android/tutorial-introduccion-rxjava.png
 ---
 
 Aprende RxJava desde cero, paso a paso. El tutorial incluye varios ejemplos, empezando por los más simples para facilitar el aprendizaje.
