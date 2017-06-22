@@ -35,8 +35,8 @@ La encapsulación es esencial para prevenir conflictos y facilitar el desarrollo
 
 Cuando se trata de dependencias, en el desarrollo JavaScript de lado del cliente, éstas se han tratado de forma implícita tradicionalmente. 
 
-Es decir, es tarea del desarrollador asegurar que las dependencias se satisfagan en el momento de ejecución de cualquier bloque de código. 
-Además, deben asegurar que las dependencias sean satisfechas en el orden correcto.
+Es decir, es tarea del desarrollador asegurar que las dependencias se satisfagan al momento de ejectar cada bloque de código. 
+Así mismo, asegurar que estas dependencias se carguen en el orden correcto.
 
 A medida que escribimos más código Javascript en nuestras aplicaciones, la gestión de dependencias resulta más engorrosa. 
 Surgen preguntas como: ¿dónde debemos poner las nuevas dependencias a fin de mantener el orden apropiado?
@@ -44,7 +44,7 @@ Surgen preguntas como: ¿dónde debemos poner las nuevas dependencias a fin de m
 Los sistemas de módulos (`module systems`) alivian este problema y otros más. 
 Ellos nacen de la necesidad de "acomodar" el creciente ecosistema de JavaScript. 
 
-Veamos qué es lo que aportan las distintas soluciones
+Veamos qué es lo que aportan las distintas soluciones.
 
 ___
 
@@ -199,7 +199,7 @@ Esto es muy importante para los navegadores, donde el tiempo de carga inicial es
 - Soporta funciones constructoras.
 - Soporta plugins (para personalizar los pasos de carga).
 
-**CONS**
+**CONTRAS**
 
 - Sintácticamente es un poco más complejo.
 - Requiere de bibliotecas de carga, o bien de un proceso de transpilación.
@@ -253,17 +253,16 @@ La naturaleza estática de `import` y `export` permite a los analizadores estát
 
 Desafortunadamente no todos los intérpretes de JS soportan ES2015 en sus versiones estables. 
 
-Sin embargo, existen "transpiladores" (`transpilers`) que permiten el soporte de módulos.
+Sin embargo, existen "transpiladores" (`transpilers`) que añaden este soporte.
 
-Actualmente, el preset ES2015 para Babel puede gestionar módulos sin problemas.
+Un ejemplo es el preset ES2015 para Babel. Babel es un `transpiler`, y `ES2015 preset` es un plugin que permite transformar código ES2015 (ES6) en ES5 (la versión típica de Javascript soportada por todos los navegadores desde varios años).
 
-## Todo en uno: System.js
+## Un cargador universal: System.js
 
-Si deseas que tu proyecto funcione adecuadamente para todos los casos:
+¿Deseas que tu proyecto funcione adecuadamente para todos los casos?
 
 System.js es un cargador universal de módulos, que soporta CommonJS, AMD y los módulos de ES2015. 
 
-Puede trabajar en conjunto con transpilers, como Babel.
 
 ## Una mejor alternativa
 
