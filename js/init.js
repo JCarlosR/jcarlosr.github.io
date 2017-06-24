@@ -8,7 +8,7 @@
 /*	Navigation - Double Tap to Go
 ------------------------------------------------------*/
 
-   $( '#nav li:has(ul)' ).doubleTapToGo();
+   $('#nav li:has(ul)').doubleTapToGo();
 
 /*----------------------------------------------------*/
 /*	Back To Top Button

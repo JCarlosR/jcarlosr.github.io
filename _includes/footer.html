@@ -5,7 +5,7 @@
 
      <div class="twelve columns">
 
-              <ul class="footer-social">
+          <ul class="footer-social">
 			{% if site.author.github_username %}
 			<!-- GitHub -->
 			<li>
@@ -54,7 +54,7 @@
            <li><a href="/tutoriales">Tutoriales.</a></li>
            <li><a href="/blog">Blog.</a></li>
            <li><a href="/portafolio">Servicios.</a></li>
-           <li><a href="/about">Acerca del autor.</a></li>
+           <li><a href="/about">Acerca de.</a></li>
         </ul>
 
      </div>
@@ -108,8 +108,7 @@
 </div>
 </footer> <!-- Footer End-->
 
-<!-- Java Script
-================================================== -->
+<!-- Scripts -->
 <script defer src="/js/modernizr.js"></script>
 <script defer src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script defer src="/js/doubletaptogo.js"></script>
@@ -127,7 +126,7 @@
 </script>
 {% endif %}
 
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=58f91d5a2fe73a0012cb5106&product=sticky-share-buttons' async='async'></script>
+<script src='//platform-api.sharethis.com/js/sharethis.js#property=58f91d5a2fe73a0012cb5106&product=sticky-share-buttons' async='async'></script>
 
 <!-- MailerLite Universal -->
 <script>
@@ -139,3 +138,9 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '757758', 'a3j2g1d4k8', 'load');
 </script>
 <!-- End MailerLite Universal -->
+
+{% if page.scripts %}
+  {% for script in page.scripts %}
+  	<script defer src="{{ script }}"></script>
+  {% endfor %}
+{% endif %}

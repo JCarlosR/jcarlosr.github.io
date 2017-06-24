@@ -63,37 +63,28 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 
-{% comment %}
 
-  <meta name="wtf1" content="{{ page.url | prepend: site.url }}">
-  Imprime https://programacionymas.com/blog/aprende-laravel-sistema-gestion-incidencias/
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/media-queries.css">
+  {% if page.styles %}
+    {% for style in page.styles %}
+      <link rel="stylesheet" type="text/css" href="{{ style }}">
+    {% endfor %}
+  {% endif %}
 
-  <meta name="wtf2" content="{{ page.url }}"> 
-  Imprime /blog/aprende-laravel-sistema-gestion-incidencias/
-
-  <meta name="wtf3" content="{{ site.url }}"> 
-  Imprime https://programacionymas.com
-
-{% endcomment %}
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/media-queries.css">
-
-    <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context" : "http://schema.org",
       "@type" : "company",
       "name" : "Programación y más",
       "url" : "https://programacionymas.com",
       "sameAs" : [
-        "https://www.facebook.com/programacionymas",
-        "https://www.linkedin.com/in/juan-ramos-840bb741",
-        "https://twitter.com/programacionym",
-        "https://plus.google.com/+SorcJC"
+      "https://www.facebook.com/programacionymas",
+      "https://www.linkedin.com/in/juan-ramos-840bb741",
+      "https://twitter.com/programacionym",
+      "https://plus.google.com/+SorcJC"
       ]
     }
-    </script>
+  </script>
 </head>
