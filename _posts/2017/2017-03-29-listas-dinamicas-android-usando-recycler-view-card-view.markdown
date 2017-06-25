@@ -2,7 +2,7 @@
 title:  "Listas dinámicas en Android usando RecyclerView y CardView"
 categories: [Desarrollo móvil]
 tags: [android]
-image: posts/2017/android-retrofit/android-retrofit-http-cliente.png
+image: posts/2017/android-recycler-view/listas-dinamicas-android.png
 ---
 
 En este tutorial aprenderás a crear listas dinámicas en Android, usando las clases RecyclerView y CardView.

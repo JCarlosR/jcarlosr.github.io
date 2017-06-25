@@ -2,7 +2,7 @@
 title:  "Personalizar el Action Bar"
 categories: [Desarrollo móvil]
 tags: [android]
-image: posts/2017/android-retrofit/android-retrofit-http-cliente.png
+image: posts/2017/toolbar/personalizar-android-action-bar.png
 ---
 
 En este tutorial aprenderás a personalizar el Action Bar de tus proyectos Android.

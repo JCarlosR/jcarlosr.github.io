@@ -2,6 +2,7 @@
 title:  "Cómo pedir una fecha en Android usando DatePicker"
 categories: [Desarrollo móvil]
 tags: [android]
+image: posts/2017/android/android-datepicker.png
 ---
 
 En este tutorial Android aprenderás a solicitar a los usuarios que ingresen una fecha a través de un DatePicker.

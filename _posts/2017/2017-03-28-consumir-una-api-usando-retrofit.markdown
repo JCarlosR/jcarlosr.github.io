@@ -2,7 +2,7 @@
 title:  "Cómo consumir una API y procesar la respuesta usando Retrofit"
 categories: [Desarrollo móvil]
 tags: [android]
-image: posts/2017/android-retrofit/android-retrofit-http-cliente.png
+image: posts/2017/android-retrofit/consumir-api-android.png
 ---
 
 En este tutorial aprenderás a consumir una API (servicios web) y procesar la respuesta JSON obtenida.

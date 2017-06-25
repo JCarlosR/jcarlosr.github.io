@@ -2,6 +2,7 @@
 title: "Laravel: Guardar fecha de la última vez que un usuario inició sesión"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/fecha-login/laravel-guardar-fecha-ultima-sesion.png
 ---
 
 En este tutorial aprenderás a registrar la fecha del último inicio de sesión de tus usuarios en Laravel.

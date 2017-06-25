@@ -2,6 +2,7 @@
 title: "Restringir el acceso a solo administradores en Laravel, usando Middlewares"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/laravel-admin/laravel-admin-middleware.png
 ---
 
 En este tutorial de Laravel aprenderás a restringir el acceso a tus rutas, según el rol de cada usuario.

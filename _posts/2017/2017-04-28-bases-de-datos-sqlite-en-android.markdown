@@ -2,6 +2,7 @@
 title: "Bases de datos SQLite en Android"
 categories: [Desarrollo móvil]
 tags: [android]
+image: posts/2017/android/android-base-datos-sqlite.png
 ---
 
 Aprende todo lo necesario para EMPEZAR a usar bases de datos SQLite en tus proyectos Android.
