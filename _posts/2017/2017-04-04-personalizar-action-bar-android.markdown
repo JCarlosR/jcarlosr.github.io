@@ -1,11 +1,11 @@
 ---
-title:  "Personalizar el Action Bar"
+title:  "Cómo personalizar el Action Bar de tu aplicación Android"
 categories: [Desarrollo móvil]
 tags: [android]
 image: posts/2017/toolbar/personalizar-android-action-bar.png
 ---
 
-En este tutorial aprenderás a personalizar el Action Bar de tus proyectos Android.
+En este tutorial aprenderás a personalizar el Action Bar de tus proyectos Android. Podrás modificar su contenido como mejor te parezca (por ejemplo incluir imágenes, y centrarlas).
 
 Toolbar
 ---
