@@ -2,7 +2,7 @@
 title:  "Confirmar correo en Laravel"
 categories: [Desarrollo web]
 tags: [laravel]
-image: posts/2017/laravel-confirmar-correo/confirmar-email.png
+image: posts/2017/laravel-confirmar-correo/confirmar-email.jpg
 ---
 Hoy aprenderemos a confirmar el correo de nuestros usuarios en Laravel.
 
