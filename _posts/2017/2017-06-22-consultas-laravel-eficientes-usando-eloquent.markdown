@@ -2,6 +2,7 @@
 title: "Cómo escribir consultas Eloquent más eficientes en Laravel"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/optimizar-laravel/consultas-eloquent.jpg
 ---
 
 Aprende a escribir consultas Eloquent más eficientes en Laravel con estos ejemplos prácticos.

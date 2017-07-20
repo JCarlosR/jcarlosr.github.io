@@ -19,15 +19,15 @@ ___
 
 Si has desarrollado para otras plataformas, es probable que tengas noción de los conceptos de **encapsulación** y **dependencia**. 
 
-Muchas aplicaciones son desarrolladas de forma aislada.
+Años atrás, la gran mayoría de aplicaciones se desarrollaban de forma aislada. Hoy en día, es todo lo contrario.
 
-Hasta que alguno de los requerimientos puede ser implementado usando como base una solución ya existente.
+Es común que alguno de los requerimientos de un sistema que se está desarrollando, se pueda implementar usando como base una solución ya existente.
 
-En el instante en que se introduce una "pieza de software" dentro de un proyecto, **se crea una dependencia** entre este y la pieza de software. 
+En el instante en que se introduce una "pieza de software" dentro de un proyecto, **se crea una dependencia** entre éste y la pieza de software. 
 
-Dado que estas piezas software necesitan trabajar en conjunto, **es importante que no existan conflictos** entre ellos.
+Dado que estas piezas necesitan trabajar en conjunto, **es importante que no existan conflictos** entre ellas.
 
-Esto puede sonar trivial, pero si no realizamos ningún tipo de encapsulación, es cuestión de tiempo para que 2 módulos entren en conflicto. 
+Entonces, si no realizamos ningún tipo de encapsulación, es cuestión de tiempo para que 2 módulos entren en conflicto. 
 
 > Esta es una de las razones por las que bibliotecas de C usan un prefijo en sus componentes.
 
@@ -35,10 +35,11 @@ La encapsulación es esencial para prevenir conflictos y facilitar el desarrollo
 
 Cuando se trata de dependencias, en el desarrollo JavaScript de lado del cliente, éstas se han tratado de forma implícita tradicionalmente. 
 
-Es decir, es tarea del desarrollador asegurar que las dependencias se satisfagan al momento de ejectar cada bloque de código. 
+Es decir, siempre ha sido tarea del desarrollador asegurar que las dependencias se satisfagan al momento de ejectar cada bloque de código. 
 Así mismo, asegurar que estas dependencias se carguen en el orden correcto.
 
-A medida que escribimos más código Javascript en nuestras aplicaciones, la gestión de dependencias resulta más engorrosa. 
+A medida que escribimos más código Javascript en nuestras aplicaciones, la gestión de dependencias resulta más engorrosa.
+
 Surgen preguntas como: ¿dónde debemos poner las nuevas dependencias a fin de mantener el orden apropiado?
 
 Los sistemas de módulos (`module systems`) alivian este problema y otros más. 
@@ -48,7 +49,7 @@ Veamos qué es lo que aportan las distintas soluciones.
 
 ___
 
-## 1 solución Ad-Hoc: The Revealing Module Pattern
+## Una primera solución: The Revealing Module Pattern
 
 Antes de la llegada de los module systems:
 
@@ -56,31 +57,30 @@ Un particular patrón de programación comenzó a usarse cada vez con mayor frec
 
 ```js
 var miModuloRevelador = (function () {
-    var varPrivada = "Juan Ramos",
-        varPublica = "Hola !";
+    var nombre = "Juan Ramos",
+        saludo = "Hola !";
 
 	// Función privada
     function imprimirNombre() {
-        console.log("Nombre:" + varPrivada);
+        console.log("Nombre:" + nombre);
     }
 
 	// Función pública
     function asignarNombre(nuevoNombre) {
-        varPrivada = nuevoNombre;
+        nombre = nuevoNombre;
     }
 
-    // Revelar accesos públicos
-    // opcionalmente con otros nombres
+    // Revelar accesos públicos (opcionalmente con otros nombres)
     return {
         setName: asignarNombre,
-        greeting: varPublica
+        greeting: saludo
     };
 })();
 
-miModuloRevelador.setName("Carlos Ramos");
+miModuloRevelador.setName("Carlos");
 ```
 
-Los ámbitos en Javascript (al menos hasta la aparición de `let` en ES2015) trabajan a nivel de función. 
+Los ámbitos en Javascript siempre han trabajado a nivel de función (hasta antes de la aparición de `let` en ES2015). 
 
 Esto significa que todo lo que se declara dentro de una función no puede escapar de su ámbito. 
 Es por esta razón que el patrón `revealing module` se basa en funciones para encapsular el contenido privado (como muchos otros patrones de Javascript).
@@ -89,7 +89,9 @@ En el ejemplo anterior, las funciones y variables públicas son expuestas en el 
 
 Todas las otras declaraciones están protegidas por el ámbito de la función que las contiene. 
 
-Nota: No es obligatorio usar `var` e inmediatamente asignarle la función. Declarar la función con un nombre también es válido.
+Debes tener en cuenta que la variable no está recibiendo la función directamente, sino más bien el resultado de ejecutar la función, es decir, el objeto que se devuelve a través del `return` de la función anónima.
+
+Esto se conoce como "Immediately-invoked function expression". Si llevas poco tiempo usando Javascript y te parece confuso, te recomiendo que antes de continuar leas este artículo sobre [funciones que son invocadas inmediatamente luego de su creación][IIFE].
 
 **PROS**
 
@@ -305,9 +307,7 @@ Si deseas [aprender Webpack puedes empezar viendo esta serie][webpack] de videot
 
 Si te ha parecido interesante, por favor ayúdame a compartir este artículo.
 
-___
-
-Este artículo es una adaptación de este [otro artículo][original] en inglés.
 
 [original]: https://auth0.com/blog/javascript-module-systems-showdown/ 
 [webpack]: https://series.programacionymas.com/aprende-webpack-paso-a-paso
+[IIFE]: /blog/funciones-javascript-invocadas-inmediatamente-IIFE

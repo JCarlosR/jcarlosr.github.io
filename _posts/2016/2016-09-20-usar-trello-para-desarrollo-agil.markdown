@@ -2,6 +2,7 @@
 title: "Cómo usar Trello para el desarrollo ágil"
 categories: [Buenas prácticas]
 tags: [scrum, agile]
+image: posts/2016/trello-desarrollo-agil-scrum.jpg
 ---
 
 En esta ocasión aprenderás a usar Trello como una herramienta de apoyo para el desarrollo ágil. Específicamente, vamos a aplicar varios de los conceptos de Scrum, aunque no seguiremos todo lo descrito por esta metodología al pie de la letra.

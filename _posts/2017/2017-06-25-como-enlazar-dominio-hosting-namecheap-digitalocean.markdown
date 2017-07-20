@@ -2,6 +2,7 @@
 title: "Cómo asociar un dominio a un hosting (Por ejemplo, Namecheap con DigitalOcean)"
 categories: [Desarrollo web]
 tags: [dominio,hosting]
+image: posts/2017/dominio-hosting/dominio-hosting-asociar.jpg
 ---
 
 En este tutorial vamos a ver de forma muy puntual como asociar un dominio adquirido en Namecheap con un droplet de Digital Ocean.

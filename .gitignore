@@ -5,3 +5,5 @@ _site
 *.sublime-workspace
 .DS_Store
 .idea/workspace.html
+js/bundle.js
+node_modules

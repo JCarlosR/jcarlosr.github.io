@@ -2,6 +2,7 @@
 title: "Aprende Webpack paso a paso"
 categories: [Desarrollo web]
 tags: [javascript]
+image: posts/2017/webpack/aprende-webpack-desde-cero.jpg
 ---
 
 En este tutorial vamos a aprender qué es webpack, su importancia, y cómo podemos empezar a usarlo en nuestros desarrollos.
