@@ -2,7 +2,7 @@
 title: "¿Qué es el Sprint Planning Meeting?"
 categories: [Buenas prácticas]
 tags: [scrum, agile]
-image: posts/2016/sprint-planning-scrum.jpg
+image: posts/2016/sprint-planning-scrum.png
 ---
 
 En Scrum, la *reunión de planificación de sprint* (sprint planning meeting) cuenta con la participación del [product owner]({% post_url 2016-09-18-scrum-product-owner %}), ScrumMaster y todo el equipo de Scrum. 
