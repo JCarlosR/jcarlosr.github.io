@@ -111,6 +111,14 @@ ___
 Si realmente quieres lograr aquello que tanto dices desear: toma acción ahora mismo. 
 Pero por favor, no lo olvides al día siguiente (o incluso, horas más tardes).
 
+¿Deseas ver o **compartir este mensaje en formato de vídeo**?
+
+<div class="text-center">
+	<iframe width="858" height="480" src="//www.youtube.com/embed/4qe06o_FW5Q?vq=hd720&rel=0" frameborder="0" allowfullscreen></iframe>	
+</div>
+
+Adelante.
+
 ___
 
 Este artículo ha sido traducido y ligeramente adaptado a partir de su [versión original][original] en inglés.
