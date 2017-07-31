@@ -71,7 +71,7 @@ Una vez confirmado, verás este mensaje de éxito:
 
 ![Verificación en 2 pasos - Confirmado](/images/posts/2017/laravel-mail-gmail/verificacion-2-pasos-c.png)
 
-Y podrás autorizar a tu aplicación el uso del correo.
+Y podrás [autorizar a tu aplicación el uso del correo][new-app].
 
 ![Autorizar a una app para usar la cuenta de Gmail](/images/posts/2017/laravel-mail-gmail/verificacion-2-pasos-password-app.png)
 
@@ -308,3 +308,4 @@ ___
 Esto me hizo perder varios minutos. Espero que no te ocurra lo mismo.
 
 [two-step]: https://www.google.com/landing/2step/
+[new-app]: https://security.google.com/settings/security/apppasswords
