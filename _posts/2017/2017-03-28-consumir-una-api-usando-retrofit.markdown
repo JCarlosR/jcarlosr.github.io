@@ -118,7 +118,7 @@ Ejemplo de ApiService
 En el siguiente ejemplo de ApiService se han considerado 4 métodos abstractos.
 
 Cada método define una ruta, y especifica qué clase se encargará de procesar la respuesta obtenida.
-Esto te lo explicaré con más detalle en un momento. Por favor ten paciencia.
+Esto te lo explicaré con más detalle en un momento. Vamos de a pocos.
 
 - El primer método representa una **petición GET** a la ruta ```diseases```. La respuesta será un listado de enfermedades. Y esta respuesta se va a procesar gracias a la clase ```DiseasesResponse```.
 
@@ -142,7 +142,7 @@ public interface MyApiService {
         @Field("user_id") String user_id
     );
 
-    @GET("/login")
+    @GET("login")
     Call<LoginResponse> getLogin(
     	@Query("username") String username, 
     	@Query("password") String password
@@ -177,7 +177,7 @@ public class MyApiAdapter {
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         httpClient.addInterceptor(logging);
 
-        String baseUrl = "http://my-site.com/api/";
+        String baseUrl = "https://mi-pagina.com/api/";
 
         if (API_SERVICE == null) {
             Retrofit retrofit = new Retrofit.Builder()

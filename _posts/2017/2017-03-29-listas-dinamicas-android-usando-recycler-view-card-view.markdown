@@ -198,9 +198,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
 DataSet
 ---
-Como puedes observar, dentro del ```adapter``` tenemos un atributo de clase llamado ```mDataSet```.
+Como puedes observar, dentro del `adapter` tenemos un atributo llamado ```mDataSet```.
 
-En este caso, la fuente de datos que espera recibir el adaptador es solo un arreglo de objetos ```String```.
+En este caso, la fuente de datos que espera recibir el adaptador es solo un arreglo de objetos `String`.
 
 Pero esta fuente de datos puede ser más compleja, según se requiera.
 
@@ -208,7 +208,7 @@ Por ejemplo, si queremos mostrar información de usuarios es posible que el atri
 
 ViewHolder
 ---
-En el método ```onCreateViewHolder``` hacemos uso de la clase ```LayoutInflater``` para "inflar" un layout XML.
+En el método `onCreateViewHolder` hacemos uso de la clase `LayoutInflater` para "inflar" un layout XML.
 
 En este caso, el layout se representa solo por un ```TextView```, pero también podría hacer referencia a un ```CardView``` y contener más datos.
 

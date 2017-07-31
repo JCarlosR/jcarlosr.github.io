@@ -159,31 +159,29 @@ La interfaz ```DatePickerDialog.OnDateSetListener``` es la encargada de invocar 
 
 Pero si el método está definido sobre el mismo ```DatePickerFragment``` no nos resulta muy útil.
 
-Nuestra intención es acceder a la fecha seleccionada desde nuestro fragment, activity, o desde donde sea que estemos creando nuestro ```DatePickerFragment```.
+Nuestra intención es acceder a la fecha seleccionada desde nuestro fragment o activity (desde donde sea que estemos creando nuestro ```DatePickerFragment```).
 
 Para lograr ello, lo que tenemos que hacer es definir el ```listener``` en la clase que hará uso del ```DatePickerFragment```, mas no en el mismo ```DatePickerFragment```.
 
-> ¿En dónde es que se está definiendo el listener actualmente y dónde es que debe definirse?
+**¿En dónde es que se está definiendo el listener actualmente y dónde es que debe definirse?**
 
-El ```listener``` (oyente del evento de cambio de fecha) se está definiendo en nuestra clase ```DatePickerFragment```.
+El ```listener``` (que escucha el evento de cambio de fecha) se está definiendo en nuestra clase ```DatePickerFragment```.
 
-Eso se define al crear la instancia de ```DatePickerDialog```, exactamente en esta línea (como segundo parámetro):
+En el método `onCreateDialog` estamos devolviendo una instancia de ```DatePickerDialog```, tal como aquí se muestra:
 
 {% highlight java %}
 return new DatePickerDialog(getActivity(), this, year, month, day);
 {% endhighlight %}
 
-Ese ```this``` es lo que hace que la misma clase sea la que tenga que actuar de ```listener```, y es por eso que en la cabecera de nuestra clase nos encontramos con ```implements DatePickerDialog.OnDateSetListener```.
+El ```this``` que se usa como segundo parámetro es lo que hace que la misma clase sea la que tenga que actuar de ```listener```, y es por eso que en la cabecera de nuestra clase nos encontramos con ```implements DatePickerDialog.OnDateSetListener```.
 
-> Ya entiendo, pero, ¿cómo hacemos que el listener se defina en la clase desde la que creamos el dialog?
+Entonces te estarás preguntando, **¿cómo hacemos que el listener se defina en la clase desde la que creamos el dialog?**
 
-Para ello debemos crear el listener en la clase que invoca el dialog (puede ser un fragment o un activity).
+Para ello debemos crear el listener en la clase que invocará el dialog (sea un fragment o un activity, no hay problema). Y una vez creado, debemos pasar este listener a nuestro ```DialogFragment```.
 
-Luego debemos pasarle el listener como parámetro al ```DialogFragment```.
+Para pasarle el `listener` como parámetro a nuestro ```DialogFragment``` vamos a definir un método `newInstance`, que será el encargado de recibirlo. No podemos pasar el listener en el mismo constructor, porque no es seguro (y por tanto Android no lo permite).
 
-Para pasarle el ```listener``` como parámetro debemos tener un método que cree instancias ```DialogFragment```. No lo podemos hacer en el mismo constructor, porque Android no lo permite.
-
-Entonces **nos quedaría de esta forma**:
+Entonces nuestra clase **quedaría de esta forma**:
 
 {% highlight java %}
 public class DatePickerFragment extends DialogFragment {
@@ -248,9 +246,9 @@ Si entendemos el código que usamos, entonces nos será más fácil recordar lo 
 
 Si tienes alguna duda, o crees que podemos mejorar el código, por favor deja un comentario.
 
-Siempre estoy dispuesto a escuchar sugerencias. De hecho últimamente he desarrollado un gusto inmenso por ser corregido.
+Siempre estoy dispuesto a escuchar sugerencias. Así aprendemos todos.
 
-Extras: Cómo solicitar varias fechas y capturar con el formato adecuado
+Extras: Cómo solicitar y capturar varias fechas con el formato adecuado
 ---
 
 Si necesitas leer varias fechas, entonces necesitas un ```EditText``` para cada una.
@@ -328,7 +326,7 @@ private void showDatePickerDialog(final EditText editText) {
         @Override
         public void onDateSet(DatePicker datePicker, int year, int month, int day) {
             // +1 because january is zero
-            final String selectedDate = twoDigits(day) + " / " + twoDigits(month+1) + " / " + year;
+            final String selectedDate = twoDigits(day) + "/" + twoDigits(month+1) + "/" + year;
             editText.setText(selectedDate);
         }
     });
@@ -354,4 +352,6 @@ Como sabes, los paréntesis son opcionales, pero te recomiendo dejarlos, por leg
 
 Gracias por leer hasta el final.
 
-Cualquier duda, deja un comentario, que iremos haciendo más completa esta guía.
+Cualquier duda, ya sabes, puedes dejar un comentario.
+
+Y si te ha sido de ayuda este artículo, por favor ayúdame a compartirlo.
