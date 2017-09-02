@@ -2,6 +2,7 @@
 title: "Javascript: Funciones que son invocadas inmediatamente (IIFE)"
 categories: [Desarrollo web]
 tags: [javascript]
+image: posts/2017/javascript/funciones-invocadas-inmediatamente.png
 ---
 
 Aprende cómo funcionan las IIFEs (Immediately-invoked function expressions) en Javascript, y por qué se han usado tradicionalmente en el desarrollo Javascript.

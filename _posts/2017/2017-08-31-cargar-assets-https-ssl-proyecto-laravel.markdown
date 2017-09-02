@@ -2,6 +2,7 @@
 title: "¿Tu proyecto Laravel tiene HTTPS y no cargan los assets? (Imágenes, estilos, scripts)"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/laravel-ssl-https/no-carga-js-css.png
 ---
 
 Cuando añadimos un protocolo seguro a nuestro dominio es común que los assets de nuestra aplicación dejen de cargar adecuadamente. Aprende cómo solucionar este problema ya mismo!

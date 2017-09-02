@@ -2,6 +2,7 @@
 title: "En Laravel: ¿Cómo enviar correos? (Configura el envío en 3 simples pasos)"
 categories: [Desarrollo web]
 tags: [laravel]
+image: posts/2017/laravel-mail-gmail/configurar.png
 ---
 
 Aprende a enviar emails desde tu aplicación Laravel. A uno o múltiples destinatarios.
