@@ -23,6 +23,16 @@ scripts:
     </div>
   </section> <!-- Intro Section End-->
 
+  <!-- Info Section  -->
+  <section id="info">
+    <div class="row text-center">
+
+      <p class="text-center"><strong>Hola! ¿Qué quieres aprender hoy?</strong></p>
+      <p>Selecciona la tecnología de tu interés:</p>
+
+    </div>
+  </section> <!-- Info Section End-->
+
   <section id="skills">
     <a href="https://series.programacionymas.com/aprende-bases-de-datos">
       <img src="/images/skills/mysql.png" class="skill" alt="Logo MySQL" title="Aprende a modelar bases de datos">  
@@ -44,30 +54,6 @@ scripts:
     </a>        
   </section>
 
-  <!-- Info Section  -->
-  <section id="info">
-    <div class="row text-center">
-
-      <p class="text-center"><strong>Hola, ¿en qué te puedo ayudar?</strong></p>
-
-      <div class="bgrid-halves">
-        <div class="columns">
-          <a href="/tutoriales" class="button">Quiero aprender a programar</a>
-          <p>
-            Aprende programación viendo videos sobre distintas tecnologías.
-            Desarrolla tu primera aplicación.
-          </p>
-        </div>
-        <div class="columns s-first">
-          <a href="https://programacionymas.typeform.com/to/zFalJY" target="_blank" class="button">Necesito ayuda con un proyecto</a>
-          <p>
-            Si tienes un proyecto en mente, ingresa aquí y cuéntame más para poder ayudarte.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section> <!-- Info Section End-->
 
 <!-- Works Section
   ================================================== -->
@@ -143,18 +129,40 @@ scripts:
 
 </section> <!-- Works Section End-->
 
+
+<!-- Call-To-Action Section
+================================================== -->
+<section id="call-to-action">
+  <div class="row">
+
+    <div class="eight columns offset-1">
+      <h2><a href="#">¿Necesitas una aplicación?</a></h2>
+      <p>Si tienes un proyecto en mente, cuéntame más y te escribiré para ver cómo puedo ayudarte. <span>No esperes más</span>.
+      </p>
+    </div>
+
+    <div class="three columns action">
+      <a href="//programacionymas.typeform.com/to/zFalJY" target="_blank" class="button">
+        Contactar
+      </a>
+    </div>
+
+  </div>
+</section> <!-- Call-To-Action Section End-->
+
+
+
 <!-- Journal Section
   ================================================== -->
   <section id="journal">
 
     <div class="row">
      <div class="twelve columns align-center">
-      <h2>Últimas publicaciones.</h2>
+      <h2>Lo último en el blog.</h2>
     </div>
   </div>
 
   <div class="blog-entries">
-
 
     {% for post in site.posts limit:3 %}
     <article class="row entry">
@@ -204,21 +212,4 @@ scripts:
 
 </section> <!-- Journal Section End-->
 
-<!-- Call-To-Action Section
-  ================================================== -->
-  <section id="call-to-action">
-    <div class="row">
 
-     <div class="eight columns offset-1">
-
-      <h2><a href="#">¿Tienes un proyecto en mente?</a></h2>
-      <p>Cuéntame más y te contactaré para conversar cómo puedo ayudarte en la realización del mismo. <span>No esperes más</span>.
-      </p>
-    </div>
-
-    <div class="three columns action">
-      <a href="https://programacionymas.typeform.com/to/zFalJY" target="_blank" class="button">Contactar</a>
-    </div>
-
-  </div>
-</section> <!-- Call-To-Action Section End-->

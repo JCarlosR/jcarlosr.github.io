@@ -392,7 +392,6 @@ background: rgba(52,143,79,1);
 }
 #skills {
    padding: 2em 1em;
-   background: #ebebeb;  
 }
 img.skill {
    opacity: 0;
@@ -479,8 +478,8 @@ img.skill {
 
 #info {
    background: white;
-   padding-top: 60px;
-   padding-bottom: 42px;
+   padding-top: 2em;
+   padding-bottom: 1em;
 }
 #info p {
   font-size: 1em;
