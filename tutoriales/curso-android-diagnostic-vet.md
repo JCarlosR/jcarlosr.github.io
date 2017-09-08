@@ -12,7 +12,7 @@ En este nuevo **curso de Android** vamos a aprender a desarrollar una aplicació
 
 <div class="text-center">
 <a href="https://www.youtube.com/playlist?list=PLzSFZWTjelbI_qvEzuvMhA0xNsKnK1qid" target="_blank">
-  <img src="/images/tutoriales/diagnostic-vet.png" alt="App Android Diagnostic Vet" class="img-responsive" width="480">
+  <img src="/images/tutoriales/diagnostic-vet.png" alt="App Android Diagnostic Vet" class="img-responsive" width="260">
 </a>
 </div>
 
@@ -27,8 +27,10 @@ También es posible filtrar los resultados en base a un sistema del organismo.
 
 La app en realidad es genérica. Una vez que aprendas todos los conceptos, siguiendo tu imaginación, podrás desarrollar aplicaciones de diagnóstico médico para humanos, o centrarte únicamente en una especie.
 
-## Apúntate ya, es gratis!
+## Regístrate en el curso, es gratis
 
-Apúntate a través del siguiente formulario y recibe los recursos necesarios para que puedas empezar a seguir la serie!
+Ingresando tus datos en el siguiente formulario recibirás los recursos necesarios para que puedas empezar a seguir la serie.
 
-<script type="text/javascript" src="//static.mailerlite.com/data/webforms/385364/t2c9j8.js?v1"></script>
+<script type="text/javascript" src="//static.mailerlite.com/data/webforms/385364/t2c9j8.js?v6"></script>
+
+También quedarás suscrito a nuestra lista de correo si aún no estabas inscrito.

@@ -6,7 +6,7 @@ description: Hemos desarrollado una aplicación móvil que permite diagnosticar 
 ---
 
 <p class="text-center">
-	<img src="/images/portfolio/diagnostic-vet/logo.png" alt="Imagen grande de Diagnostic Vet" title="Imagen de muestra de la aplicación Diagnostic Vet">
+	<img src="/images/portfolio/diagnostic-vet/logo.png" alt="Imagen grande de Diagnostic Vet" title="Imagen de muestra de la aplicación Diagnostic Vet" width="220">
 </p>
 
 **Diagnostic Vet** es una **aplicación móvil** que permite diagnosticar posibles enfermedades de las mascotas en general.
