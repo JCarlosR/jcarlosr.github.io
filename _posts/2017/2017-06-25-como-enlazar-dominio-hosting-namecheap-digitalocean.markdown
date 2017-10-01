@@ -17,6 +17,8 @@ ___
 
 - [Namecheap][domains] es un proveedor de dominios. Como su mismo nombre lo indica, ellos prometen vendernos dominios a un precio bastante asequible. Lo mejor es que, es un servicio que cuenta con muchos clientes, pero aún así atienden de forma oportuna nuestras dudas.
 
+<!-- BEGIN LINK --><a rel="nofollow" href="https://affiliate.namecheap.com/?affId=105242"><img src="http://static.shareasale.com/image/46483/728x90_00.gif" width="728" height="90" border="0" alt="Comprar un dominio es fácil con Namecheap"></a><!-- END LINK -->
+
 Ambos son servicios que uso a diario y los recomiendo (los enlaces de antes son de afiliación; si llegas a contratar uno de los servicios y tienes dudas, siempre puedes dejar un comentario aquí en la página para ayudarte). 
 
 Nunca he tenido inconvenientes con ellos. De hecho he contactado a soporte en algunas ocasiones y he recibido atención inmediata.

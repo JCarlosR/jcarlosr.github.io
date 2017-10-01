@@ -298,4 +298,18 @@ php artisan migrate --seed
 
 Y eso es todo.
 
+¿Necesitas un dominio?
+---
+
+Recuerda que Digital Ocean es un proveedor de Cloud Computing, como ellos mismos lo describen en su página oficial.
+Pero, no son proveedores de nombres de dominio.
+Si necesitas un dominio `.com`, `.net` o con alguna otra extensión, lo puedes adquirir fácilmente en Namecheap.
+
+<a target="_blank" href="https://affiliate.namecheap.com/?affId=105242"><img src="http://static.shareasale.com/image/46483/728x90_00.gif" width="728" height="90" border="0" alt="Comprar un dominio es fácil con Namecheap" /></a>
+
+Una vez que hayas adquirido el dominio de tu preferencia, lo puedes [vincular a tu droplet de Digital Ocean][namecheap-vincular] en un par de pasos.
+
+Te deseo éxitos en tu proyecto :)
+
 [digital-ocean]: https://m.do.co/c/16e8c5d942fd
+[namecheap-vincular]: /blog/como-enlazar-dominio-hosting-namecheap-digitalocean/
